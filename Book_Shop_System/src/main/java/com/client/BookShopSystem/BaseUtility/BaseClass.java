@@ -8,8 +8,10 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.xml.XmlTest;
 
@@ -19,7 +21,7 @@ public class BaseClass
 {
 	public WebDriver driver=null;
 	static String browser=null;
-	FileUtility futils=new FileUtility();
+	public FileUtility futils=new FileUtility();
 	
 	@BeforeSuite
 	public void beforeSuitConfigMethod()
@@ -41,6 +43,8 @@ public class BaseClass
 			if(browser==null)
 			{
 				browser=futils.getDataFromPropertyFile("browser");
+				System.out.println(browser);
+			
 			}
 		}
 		if(browser.equalsIgnoreCase("chrome")){
@@ -67,11 +71,25 @@ public class BaseClass
 			url=test.getParameter("url");
 			if(url==null)
 			{
-				browser=futils.getDataFromPropertyFile("url");
+				url=futils.getDataFromPropertyFile("url");
+			
 			}
 		}
+	
 		driver.get(url);
 		System.out.println("browser launched and appllication opened");
+	}
+	
+	@BeforeMethod
+	public void beforeMethodConfigMethod()
+	{
+		
+	}
+	
+	@AfterMethod
+	public void afterMethodConfigMethod()
+	{
+		
 	}
 	
 	@AfterClass
