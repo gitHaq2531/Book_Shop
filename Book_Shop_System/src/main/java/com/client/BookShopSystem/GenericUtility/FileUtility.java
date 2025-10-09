@@ -9,7 +9,7 @@ public String getDataFromPropertyFile(String key)
 {
 	String data=null;
 	try {
-		FileInputStream fis=new FileInputStream("path");
+		FileInputStream fis=new FileInputStream("./Test Data/CommonData.properties");
 		Properties pobj=new Properties();
 		pobj.load(fis);
 		data=pobj.getProperty(key);
@@ -18,4 +18,5 @@ public String getDataFromPropertyFile(String key)
 		}
 	return data;
 }
+
 }
