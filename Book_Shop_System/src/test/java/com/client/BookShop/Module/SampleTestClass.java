@@ -4,9 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.client.BookShopSystem.BaseUtility.BaseClass;
+import com.client.BookShopSystem.BaseUtility.MasterBaseClass;
 @Listeners(com.client.BookShopSystem.ListenerUtility.ListenerImpClass.class)
-public class SampleTestClass extends BaseClass {
+public class SampleTestClass extends MasterBaseClass {
 	@Test
 	public void Mytest() 
 	{
