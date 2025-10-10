@@ -18,6 +18,7 @@ public class JavaUtility
 		return ranNumber;
 		
 	}
+	
 	public int getRandomeNumber(int from, int to){ 
 		Random random = new Random();
 		int ranNumber = random.nextInt(from, to);
@@ -40,6 +41,7 @@ public class JavaUtility
 		return dateString;
 		
 	}
+	
 	public String getSystemDateAndTime() {
 		Date dateObj = new Date();
 		SimpleDateFormat simple = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

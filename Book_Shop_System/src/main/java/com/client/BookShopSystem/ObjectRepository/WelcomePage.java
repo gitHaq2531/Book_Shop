@@ -5,20 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class WelcomePage {
 	WebDriver driver;
-	WelcomePage wP ;
-	public LoginPage(WebDriver driver) {
+
+	public WelcomePage(WebDriver driver) {
 	this.driver = driver;
-	wP=new WelcomePage(driver);
 	PageFactory.initElements(driver, this);
 
 	}
 	
-	@FindBy(id = "CustomerEmail")
-	private WebElement emailTF ;
-	public WebElement getEmailTF() {
-		return emailTF;
+	@FindBy(xpath = "//span[.='Account']")
+	private WebElement accountIcon ;
+	public WebElement getAccountIcon() {
+		return accountIcon;
 	}
-
+	
 }
