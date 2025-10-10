@@ -1,4 +1,4 @@
-package com.client.BookShop.Module;
+package com.client.BookShop_KK.Module;
 
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
