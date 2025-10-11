@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.client.BookShop.Module.SampleTestClass">
+      <class name="com.client.BookShop_KK.Module.SampleTestClass">
         <methods>
           <include name="afterMethodConfigMethod"/>
           <include name="beforeMethodConfigMethod"/>
@@ -13,7 +13,7 @@
           <include name="beforeSuitConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
         </methods>
-      </class> <!-- com.client.BookShop.Module.SampleTestClass -->
+      </class> <!-- com.client.BookShop_KK.Module.SampleTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
