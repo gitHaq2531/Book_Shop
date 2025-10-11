@@ -4,27 +4,58 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.client.BookShopSystem.GenericUtility.WebDriverUtility;
 
 public class LoginPage {
+	HomePage wp;
 	WebDriver driver;
-	WelcomePage wP ;
+	WebDriverUtility webDrUtil;
+
 	public LoginPage(WebDriver driver) {
-	this.driver = driver;
-	wP=new WelcomePage(driver);
-	PageFactory.initElements(driver, this);
+		this.driver = driver;
+		wp = new HomePage(driver);
+		webDrUtil = new WebDriverUtility(driver);
+		PageFactory.initElements(driver, this);
 
 	}
-	
-	@FindBy(id = "CustomerEmail")
-	private WebElement emailTF ;
+
+	@FindBy(id = "login_button")
+	private WebElement loginButton;
+
+	public WebElement getLoginButton() {
+		return loginButton;
+	}
+
+	@FindBy(name = "login_username")
+	private WebElement emailTF;
+
 	public WebElement getEmailTF() {
 		return emailTF;
 	}
-	@FindBy(id = "CustomerPassword")
-	private WebElement PasswordTF ;
+
+	@FindBy(name = "login_password")
+	private WebElement passwordTF;
+
 	public WebElement getPasswordTF() {
-		return PasswordTF;
+		return passwordTF;
 	}
-	
-	
+
+	@FindBy(name = "submit")
+	private WebElement signInButton;
+
+	public WebElement getSignInButton() {
+		return signInButton;
+	}
+
+	public void login(String username, String password) {
+
+		getLoginButton().click();
+		emailTF.sendKeys(username);
+		passwordTF.sendKeys(password);
+		signInButton.click();
+	    webDrUtil.switcToAlertAccept();
+		
+
+	}
+
 }
