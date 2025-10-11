@@ -6,6 +6,6 @@ public class hello {
 	@Test
 	public void hello() {
 		System.out.println("hiiii");
-	}
+		System.out.println("hiiii again");
 
-}
+}}
