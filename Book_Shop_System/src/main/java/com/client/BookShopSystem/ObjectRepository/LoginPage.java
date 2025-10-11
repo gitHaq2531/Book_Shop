@@ -20,5 +20,11 @@ public class LoginPage {
 	public WebElement getEmailTF() {
 		return emailTF;
 	}
-
+	@FindBy(id = "CustomerPassword")
+	private WebElement PasswordTF ;
+	public WebElement getPasswordTF() {
+		return PasswordTF;
+	}
+	
+	
 }
