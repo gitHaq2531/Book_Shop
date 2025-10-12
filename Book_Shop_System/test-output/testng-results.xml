@@ -1,50 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-11T03:31:38 GMT-07:00" name="Default suite" finished-at="2025-10-11T03:32:12 GMT-07:00" duration-ms="34123">
+  <suite started-at="2025-10-11T03:52:31 GMT-07:00" name="Default suite" finished-at="2025-10-11T03:53:03 GMT-07:00" duration-ms="32322">
     <groups>
     </groups>
-    <test started-at="2025-10-11T03:31:38 GMT-07:00" name="Default test" finished-at="2025-10-11T03:32:12 GMT-07:00" duration-ms="34123">
+    <test started-at="2025-10-11T03:52:31 GMT-07:00" name="Default test" finished-at="2025-10-11T03:53:03 GMT-07:00" duration-ms="32322">
       <class name="com.client.BookShop_AK.Module.EntranceExamSTORE">
-        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@6a6cb05c]" started-at="2025-10-11T03:31:38 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-11T03:31:38 GMT-07:00" duration-ms="64" status="PASS">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@5b12b668]" started-at="2025-10-11T03:52:30 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-11T03:52:31 GMT-07:00" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
-        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@6a6cb05c]" started-at="2025-10-11T03:31:38 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-11T03:32:00 GMT-07:00" duration-ms="22126" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@5b12b668]" started-at="2025-10-11T03:52:31 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-11T03:52:38 GMT-07:00" duration-ms="7532" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@5e06eae6]]>
+                <![CDATA[org.testng.xml.XmlTest@c2011dba]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
-        <test-method signature="clickOnEntreranceLink()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@6a6cb05c]" started-at="2025-10-11T03:32:01 GMT-07:00" name="clickOnEntreranceLink" finished-at="2025-10-11T03:32:08 GMT-07:00" duration-ms="7578" status="FAIL">
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@5b12b668]" started-at="2025-10-11T03:52:38 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-11T03:52:42 GMT-07:00" duration-ms="3324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="clickOnEntreranceLink()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@5b12b668]" started-at="2025-10-11T03:52:42 GMT-07:00" name="clickOnEntreranceLink" finished-at="2025-10-11T03:52:43 GMT-07:00" duration-ms="1120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnEntreranceLink -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@5b12b668]" started-at="2025-10-11T03:52:43 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-11T03:53:03 GMT-07:00" duration-ms="20084" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":" //a[text()=' Entrance Exam ']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[.=' LogOut ']"}
   (Session info: chrome=140.0.7339.208)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f609a7da3d86f258cb249b219a0d4310, findElement {using=xpath, value= //a[text()=' Entrance Exam ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55276/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f609a7da3d86f258cb249b219a0d4310]]>
+Command: [19b14d1621c75970fa4f3e1d11a02eea, findElement {using=xpath, value=//a[.=' LogOut ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55730}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55730/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19b14d1621c75970fa4f3e1d11a02eea]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":" //a[text()=' Entrance Exam ']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[.=' LogOut ']"}
   (Session info: chrome=140.0.7339.208)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f609a7da3d86f258cb249b219a0d4310, findElement {using=xpath, value= //a[text()=' Entrance Exam ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55276/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f609a7da3d86f258cb249b219a0d4310
+Command: [19b14d1621c75970fa4f3e1d11a02eea, findElement {using=xpath, value=//a[.=' LogOut ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55730}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55730/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19b14d1621c75970fa4f3e1d11a02eea
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -59,11 +67,20 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at com.client.BookShop_AK.Module.EntranceExamSTORE.clickOnEntreranceLink(EntranceExamSTORE.java:15)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.client.BookShopSystem.ObjectRepository.HomePage.logOut(HomePage.java:29)
+at com.client.BookShopSystem.BaseUtility.BaseClass.afterMethodConfigMethod(BaseClass.java:90)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -91,12 +108,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnEntreranceLink -->
-        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@6a6cb05c]" started-at="2025-10-11T03:32:08 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-11T03:32:12 GMT-07:00" duration-ms="4109" status="PASS">
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@5b12b668]" started-at="2025-10-11T03:53:03 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-11T03:53:03 GMT-07:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
-        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@6a6cb05c]" started-at="2025-10-11T03:32:13 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-11T03:32:13 GMT-07:00" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExamSTORE@5b12b668]" started-at="2025-10-11T03:53:03 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-11T03:53:03 GMT-07:00" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
