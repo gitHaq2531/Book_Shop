@@ -13,26 +13,29 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.xml.XmlTest;
+import com.client.BookShopSystem.GenericUtility.ExcelUtility;
 import com.client.BookShopSystem.GenericUtility.FileUtility;
 import com.client.BookShopSystem.GenericUtility.WebDriverUtility;
 import com.client.BookShopSystem.ObjectRepository.HomePage;
 import com.client.BookShopSystem.ObjectRepository.LoginPage;
+import com.client.BookShopSystem.ObjectRepository.ProductListingPage;
 
 public class BaseClass {
 	public WebDriver driver = null;
 	static String browser = null;
+	public FileUtility futils = new FileUtility();
+	public ExcelUtility exlutil = new ExcelUtility();
+	public WebDriverUtility webDrUtil;
 	public LoginPage lp;
 	public HomePage hp;
-	public FileUtility futils = new FileUtility();
-	public WebDriverUtility webDrUtil;
-
-	@BeforeSuite
+	public ProductListingPage plp ;
+	@BeforeSuite(alwaysRun = true)
 	public void beforeSuitConfigMethod() {
 		System.out.println("suit level configuration start");
 		System.out.println("database connected");
 	}
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void beforeClassConfigMethod(XmlTest test) {
 		System.out.println("class level configuration start");
 
@@ -60,6 +63,7 @@ public class BaseClass {
 		webDrUtil = new WebDriverUtility(driver);
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
+		plp = new ProductListingPage(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
@@ -77,7 +81,7 @@ public class BaseClass {
 		System.out.println("browser launched and appllication opened");
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void beforeMethodConfigMethod() {
 		System.out.println("method level configuration start");
 		String userName = futils.getDataFromPropertyFile("username");
@@ -85,14 +89,14 @@ public class BaseClass {
 		lp.login(userName, password);
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void afterMethodConfigMethod() {
 		hp.logOut();
 		System.out.println("user LogOut...");
 
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClassConfigMethod() {
 		driver.manage().window().minimize();
 		driver.quit();
@@ -100,7 +104,7 @@ public class BaseClass {
 		System.out.println("browser closed...");
 	}
 
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void afterSuiteConfigMethod() {
 		System.out.println("databse connection closed...");
 	}
