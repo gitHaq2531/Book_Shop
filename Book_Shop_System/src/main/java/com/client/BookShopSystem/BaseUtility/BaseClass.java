@@ -82,7 +82,7 @@ public class BaseClass {
 		System.out.println("method level configuration start");
 		String userName = futils.getDataFromPropertyFile("username");
 		String password = futils.getDataFromPropertyFile("password");
-		lp.login(userName, password);
+		lp.login(userName, password); 
 	}
 
 	@AfterMethod

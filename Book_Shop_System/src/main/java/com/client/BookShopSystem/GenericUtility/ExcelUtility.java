@@ -12,19 +12,19 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtility {
 	public String getDataFromExcelSheet(String SheetName, int rownum,int celnum ) throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("./TestData/appTestData.xlsx") ;
+		FileInputStream fis = new FileInputStream("./Test Data/TestData.xlsx") ;
 		Workbook wb= WorkbookFactory.create(fis);
 		Sheet sh= wb.getSheet(SheetName);
 		Row row = sh.getRow(rownum);
 		 Cell cel= row.getCell(celnum);
-		 String data =cel.toString();
+		 String data =cel.toString().trim();
 		 wb.close();
 		return data;
 		
 	}
 	
 	public int getRowCount(String SheetName) throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("./TestData/appTestData.xlsx") ;
+		FileInputStream fis = new FileInputStream("./Test Data/TestData.xlsx") ;
 		Workbook wb=WorkbookFactory.create(fis);
 		Sheet sh =wb.getSheet(SheetName);
 		int rowcount = sh.getLastRowNum();
@@ -35,7 +35,7 @@ public class ExcelUtility {
 	
 	public void writeDataBackToExcel(String SheetName,int rownum, int cellnum, 
 			String value) throws IOException {
-		FileInputStream fis = new FileInputStream("./TestData/appTestData.xlsx");
+		FileInputStream fis = new FileInputStream("./Test Data/TestData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh =wb.getSheet(SheetName);
 		 Row row = sh.getRow(rownum);
@@ -44,7 +44,7 @@ public class ExcelUtility {
 		Cell cell =row.createCell(cellnum);
 		cell.setCellValue(value);
 		
-		FileOutputStream fos = new FileOutputStream("./TestData/appTestData.xlsx");
+		FileOutputStream fos = new FileOutputStream("./Test Data/TestData.xlsx");
 		wb.write(fos);
 		wb.close();
 		}
