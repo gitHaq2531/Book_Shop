@@ -17,7 +17,7 @@ public class ProductListingPage {
 
 	}
 	
-	@FindBy(xpath = "//img[@class='block-center img-responsive']")
+	@FindBy(xpath = "//div[@class='book-block' and contains(., 'Like a Love Song')]")
 	private WebElement randomeBook;
 	public WebElement getRandomeBook() {
 		return randomeBook;

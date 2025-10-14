@@ -8,10 +8,10 @@
           <include name="afterMethodConfigMethod"/>
           <include name="beforeMethodConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
-          <include name="verifyBookbirdLogoDisplayed"/>
           <include name="afterClassConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
           <include name="beforeSuitConfigMethod"/>
+          <include name="veifyLoginButton"/>
         </methods>
       </class> <!-- com.client.BookShop_KK.Module.HomePage.HomepageTest -->
     </classes>
