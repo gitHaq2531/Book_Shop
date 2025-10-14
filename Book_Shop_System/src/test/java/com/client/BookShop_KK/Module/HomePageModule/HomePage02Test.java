@@ -1,9 +1,7 @@
 package com.client.BookShop_KK.Module.HomePageModule;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.client.BookShopSystem.BaseUtility.MaterBaseClass;
 
 public class HomePage02Test extends MaterBaseClass {

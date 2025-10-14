@@ -10,8 +10,8 @@
           <include name="afterClassConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
+          <include name="veifyCategorylink" invocation-numbers="0 1 2 3"/>
           <include name="beforeSuitConfigMethod"/>
-          <include name="veifyCategotNames"/>
         </methods>
       </class> <!-- com.client.BookShop_KK.Module.HomePageModule.HomepageTest -->
     </classes>

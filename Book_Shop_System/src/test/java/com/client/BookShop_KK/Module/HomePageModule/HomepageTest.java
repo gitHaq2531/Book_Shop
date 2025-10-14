@@ -3,7 +3,10 @@ package com.client.BookShop_KK.Module.HomePageModule;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
 import com.client.BookShopSystem.BaseUtility.BaseClass;
+import com.client.BookShopSystem.BaseUtility.UtilityClassObject;
 
 public class HomepageTest extends BaseClass {
 	@Test(groups = "Smoke")
@@ -41,40 +44,40 @@ public class HomepageTest extends BaseClass {
 
 	
 	@Test(groups = "Smoke" ,dataProvider = "categoryNamesData")
-	public void veifyCategotNames(String name) {
-		
-		Assert.assertEquals(hp.getSideBarText(name).isDisplayed(), true);
+	public void veifyCategoryNames(String name, String n) {
+		String text =hp.getSideBarText(name).getText();
+		Assert.assertEquals(hp.getSideBarText(text).isDisplayed(), true);
 		
 	}
+	@Test(groups = "Smoke",dataProvider = "categoryNamesData")
+
+	public void veifyCategorylink(String name, String n) {
+		hp.getSideBarText(name).click();
+		String text = plp.getHeading().getText();
+		Assert.assertEquals(text.toLowerCase(), n.toLowerCase());
+//		UtilityClassObject.getTest().log(Status.INFO, text+" Link is working");
+		
+	}
+	
 	@DataProvider(name = "categoryNamesData")
 	public Object[][] categoryNamesData() {
 		// You have data from row 4 to 8 → total 5 rows (4, 5, 6, 7)
 	    int startRow = 4;
 	    int endRow = 7;
 	    int totalRows = endRow - startRow + 1;
-	    Object[][] data = new Object[totalRows][1];
+	    Object[][] data = new Object[totalRows][2];
 	    // Loop through rows and fetch data
 	    for (int i = 0; i < totalRows; i++) {
 	        String value = exlutil.getDataFromExcelSheet("Kaif Khan", startRow + i, 0);
 	        String value2 = exlutil.getDataFromExcelSheet("Kaif Khan", startRow + i, 1);
-	        data[i][0] = value;
 	        data[i][1]=value2;
+	        data[i][0] = value;
+	        
 	    }
 	    
 	    return data;
 	}
 	
-	@Test(groups = "Smoke"
-//			,dataProvider = "categoryNamesData"
-			)
-	public void veifyCategotlink(String text) {
-		  String value2 = exlutil.getDataFromExcelSheet("Kaif Khan",  4, 1);
-		  System.out.println(value2);
-//		Assert.assertEquals(hp.getSideBarText(text).isDisplayed(), true);
-		
-	}
 
-	
-	
-	
+
 }

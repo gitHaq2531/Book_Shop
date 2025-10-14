@@ -3,7 +3,9 @@ package com.client.BookShopSystem.ObjectRepository;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import com.client.BookShopSystem.GenericUtility.ExcelUtility;
@@ -19,10 +21,8 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 
 	}
-
-	@FindBy(xpath = "//a[.=' LogOut ']")
+	@FindBy(xpath = "//a[contains(.,'LogOut')]")
 	private WebElement logOutButton;
-
 	public WebElement getLogOutButton() {
 		return logOutButton;
 	}
