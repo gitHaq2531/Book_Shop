@@ -59,6 +59,14 @@ public class HomePage {
 		return loginButton;
 	}
 
+	@FindBy(xpath =  "	//h3[text()=' POPULAR AUTHORS ']")
+	private WebElement popularAuthorsText;
+
+	public WebElement getPopularAuthorText() {
+		return popularAuthorsText;
+	}
+
+	
 	public void logOut() {
 		logOutButton.click();
 		webDrUtil.ExplicitWaitUntilAlertIsPresent();
@@ -67,8 +75,7 @@ public class HomePage {
 	}
 	
 	public WebElement getSideBarText(String variableText) {
-		
-		return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '"+variableText+"')]"));
+	return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '"+variableText+"')]"));
 		
 	}
 
