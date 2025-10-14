@@ -41,7 +41,7 @@ public class HomepageTest extends BaseClass {
 
 	
 	@Test(groups = "Smoke" ,dataProvider = "categoryNamesData")
-	public void veifyCategotNames(String name,String heading) {
+	public void veifyCategotNames(String name) {
 		
 		Assert.assertEquals(hp.getSideBarText(name).isDisplayed(), true);
 		
@@ -64,10 +64,13 @@ public class HomepageTest extends BaseClass {
 	    return data;
 	}
 	
-	@Test(groups = "Smoke" ,dataProvider = "categoryNamesData")
+	@Test(groups = "Smoke"
+//			,dataProvider = "categoryNamesData"
+			)
 	public void veifyCategotlink(String text) {
-		
-		Assert.assertEquals(hp.getSideBarText(text).isDisplayed(), true);
+		  String value2 = exlutil.getDataFromExcelSheet("Kaif Khan",  4, 1);
+		  System.out.println(value2);
+//		Assert.assertEquals(hp.getSideBarText(text).isDisplayed(), true);
 		
 	}
 

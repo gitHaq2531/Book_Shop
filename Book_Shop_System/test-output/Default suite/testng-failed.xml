@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.client.BookShop_KK.Module.HomePage.HomepageTest">
+      <class name="com.client.BookShop_KK.Module.HomePageModule.HomepageTest">
         <methods>
           <include name="afterMethodConfigMethod"/>
-          <include name="veifyCategotNames"/>
           <include name="beforeMethodConfigMethod"/>
           <include name="afterClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
           <include name="beforeSuitConfigMethod"/>
+          <include name="veifyCategotNames"/>
         </methods>
-      </class> <!-- com.client.BookShop_KK.Module.HomePage.HomepageTest -->
+      </class> <!-- com.client.BookShop_KK.Module.HomePageModule.HomepageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
