@@ -2,57 +2,57 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-13T10:31:58 GMT-07:00" name="Default suite" finished-at="2025-10-13T10:32:27 GMT-07:00" duration-ms="29394">
+  <suite started-at="2025-10-13T21:52:00 GMT-07:00" name="Default suite" finished-at="2025-10-13T21:52:54 GMT-07:00" duration-ms="53493">
     <groups>
     </groups>
-    <test started-at="2025-10-13T10:31:58 GMT-07:00" name="Default test" finished-at="2025-10-13T10:32:27 GMT-07:00" duration-ms="29394">
+    <test started-at="2025-10-13T21:52:00 GMT-07:00" name="Default test" finished-at="2025-10-13T21:52:54 GMT-07:00" duration-ms="53493">
       <class name="com.client.BookShop_AK.Module.EntranceExam">
-        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T10:31:58 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-13T10:31:58 GMT-07:00" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T21:52:00 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-13T21:52:00 GMT-07:00" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
-        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T10:31:58 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-13T10:32:02 GMT-07:00" duration-ms="3940" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T21:52:00 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-13T21:52:15 GMT-07:00" duration-ms="14818" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@cdd9bba5]]>
+                <![CDATA[org.testng.xml.XmlTest@8e51ad88]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
-        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T10:32:02 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-13T10:32:03 GMT-07:00" duration-ms="719" status="PASS">
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T21:52:15 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-13T21:52:20 GMT-07:00" duration-ms="4743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodConfigMethod -->
-        <test-method signature="clickOnEntreranceLink()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T10:32:03 GMT-07:00" name="clickOnEntreranceLink" finished-at="2025-10-13T10:32:08 GMT-07:00" duration-ms="5838" status="PASS">
+        <test-method signature="clickOnEntreranceLink()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T21:52:20 GMT-07:00" name="clickOnEntreranceLink" finished-at="2025-10-13T21:52:33 GMT-07:00" duration-ms="13546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnEntreranceLink -->
-        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T10:32:08 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-13T10:32:27 GMT-07:00" duration-ms="18817" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T21:52:33 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-13T21:52:54 GMT-07:00" duration-ms="20123" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[.=' LogOut ']"}
   (Session info: chrome=141.0.7390.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [87e3ee2c339fbac95e51eae1e5585b3e, findElement {using=xpath, value=//a[.=' LogOut ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49218/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 87e3ee2c339fbac95e51eae1e5585b3e]]>
+Command: [bb39bd8d324c49c5574db27e8476233c, findElement {using=xpath, value=//a[.=' LogOut ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49882/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb39bd8d324c49c5574db27e8476233c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[.=' LogOut ']"}
   (Session info: chrome=141.0.7390.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [87e3ee2c339fbac95e51eae1e5585b3e, findElement {using=xpath, value=//a[.=' LogOut ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49218/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 87e3ee2c339fbac95e51eae1e5585b3e
+Command: [bb39bd8d324c49c5574db27e8476233c, findElement {using=xpath, value=//a[.=' LogOut ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49882/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb39bd8d324c49c5574db27e8476233c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -105,15 +105,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodConfigMethod -->
-        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T10:32:27 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-13T10:32:27 GMT-07:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T21:52:54 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-13T21:52:54 GMT-07:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
-        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T10:32:27 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-13T10:32:27 GMT-07:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@815b41f]" started-at="2025-10-13T21:52:54 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-13T21:52:54 GMT-07:00" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->

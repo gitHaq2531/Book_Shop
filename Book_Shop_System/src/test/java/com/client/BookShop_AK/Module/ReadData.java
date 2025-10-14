@@ -11,7 +11,7 @@ public class ReadData {
 	WebDriver d = new ChromeDriver();
 	d.manage().window().maximize();
 	d.get("http://49.249.28.218:8081/TestServer/Build/Online_Book_Shop_System/index.php");
-		
+		System.out.println("hii");
 		
 		
 	}
