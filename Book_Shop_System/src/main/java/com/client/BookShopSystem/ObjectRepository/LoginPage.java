@@ -47,6 +47,13 @@ public class LoginPage {
 		return signInButton;
 	}
 
+	@FindBy(xpath = "//h4[.='Login Form']")
+	private WebElement loginPageText;
+
+	public WebElement getLoginPageText() {
+		return loginPageText;
+	}
+	
 	public void login(String username, String password) {
 
 		getLoginButton().click();
