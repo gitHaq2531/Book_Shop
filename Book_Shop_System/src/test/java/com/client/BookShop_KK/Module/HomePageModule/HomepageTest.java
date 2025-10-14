@@ -41,24 +41,37 @@ public class HomepageTest extends BaseClass {
 
 	
 	@Test(groups = "Smoke" ,dataProvider = "categoryNamesData")
-	public void veifyCategotNames(String text) {
-		System.out.println(text);
+	public void veifyCategotNames(String name,String heading) {
+		
+		Assert.assertEquals(hp.getSideBarText(name).isDisplayed(), true);
 		
 	}
 	@DataProvider(name = "categoryNamesData")
-	public Object[][] categoryNamesData() {// You have data from row 4 to 8 → total 5 rows (4, 5, 6, 7, 8)
+	public Object[][] categoryNamesData() {
+		// You have data from row 4 to 8 → total 5 rows (4, 5, 6, 7)
 	    int startRow = 4;
 	    int endRow = 7;
 	    int totalRows = endRow - startRow + 1;
 	    Object[][] data = new Object[totalRows][1];
-
 	    // Loop through rows and fetch data
 	    for (int i = 0; i < totalRows; i++) {
 	        String value = exlutil.getDataFromExcelSheet("Kaif Khan", startRow + i, 0);
+	        String value2 = exlutil.getDataFromExcelSheet("Kaif Khan", startRow + i, 1);
 	        data[i][0] = value;
+	        data[i][1]=value2;
 	    }
-
+	    
 	    return data;
 	}
+	
+	@Test(groups = "Smoke" ,dataProvider = "categoryNamesData")
+	public void veifyCategotlink(String text) {
+		
+		Assert.assertEquals(hp.getSideBarText(text).isDisplayed(), true);
+		
+	}
 
+	
+	
+	
 }
