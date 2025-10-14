@@ -12,24 +12,56 @@ public class HomePage {
 	WebDriverUtility webDrUtil;
 
 	public HomePage(WebDriver driver) {
-	this.driver = driver;
-	webDrUtil = new WebDriverUtility(driver);
-	PageFactory.initElements(driver, this);
+		this.driver = driver;
+		webDrUtil = new WebDriverUtility(driver);
+		PageFactory.initElements(driver, this);
 
 	}
-	
+
 	@FindBy(xpath = "//a[.=' LogOut ']")
 	private WebElement logOutButton;
+
 	public WebElement getLogOutButton() {
 		return logOutButton;
 	}
+
+	@FindBy(xpath = "//a[@class='navbar-brand']")
+	private WebElement bookBirdLogo;
+	public WebElement getBookBirdLogo() {
+		return bookBirdLogo;
+	}
+
+	@FindBy(xpath = "//img[@class='block-center img-responsive']")
+	private WebElement randomeBook;
+	public WebElement getRandomeBook() {
+		return randomeBook;
+	}
+
+	@FindBy(xpath = "//div[@id='category']/div")
+	private WebElement theBookShopText;
+	public WebElement getTheBookShopText() {
+		return theBookShopText;
+	}
+
+	@FindBy(xpath = "//input[contains(@placeholder,'Search')]")
+	private WebElement searchBar;
+
+	public WebElement getSearchBar() {
+		return searchBar;
+	}
 	
+	@FindBy(id = "login_button")
+	private WebElement loginButton;
+
+	public WebElement getLoginButton() {
+		return loginButton;
+	}
+
 	public void logOut() {
-		
 		logOutButton.click();
 		webDrUtil.ExplicitWaitUntilAlertIsPresent();
 		webDrUtil.switcToAlertAccept();
-		
+
 	}
 
 }
