@@ -19,8 +19,14 @@ public class AddToCartPage {
 		private WebElement PalceOrderEDT;
 		
 		
+		@FindBy(xpath="//a[text()='Do Some Shopping']")
+		private WebElement MoreShoppingbtn;
 		
 		
+		public WebElement getMoreShoppingbtn() {
+			return MoreShoppingbtn;
+		}
+
 		public WebElement getPalceOrderEDT() {
 			return PalceOrderEDT;
 		}
@@ -37,6 +43,9 @@ public class AddToCartPage {
 		public void clickOnPlaceOrder() {
 			PalceOrderEDT.click();
 			
+		}
+		public void clickOnMoreOptionbtn() {
+			MoreShoppingbtn.click();
 		}
 		
 		

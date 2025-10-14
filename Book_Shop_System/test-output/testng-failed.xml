@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.client.BookShop_AK.Module.EntranceExam">
+      <class name="com.client.BookShop_AK.Module.AcedemicAndProfessional">
         <methods>
           <include name="afterMethodConfigMethod"/>
           <include name="beforeMethodConfigMethod"/>
           <include name="afterClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="executeAcedemicAndProfessional"/>
           <include name="beforeSuitConfigMethod"/>
-          <include name="clickOnEntreranceLink"/>
         </methods>
-      </class> <!-- com.client.BookShop_AK.Module.EntranceExam -->
+      </class> <!-- com.client.BookShop_AK.Module.AcedemicAndProfessional -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

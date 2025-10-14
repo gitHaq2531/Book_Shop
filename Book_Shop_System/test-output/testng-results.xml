@@ -2,116 +2,47 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-14T00:38:19 GMT-07:00" name="Default suite" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="19143">
+  <suite started-at="2025-10-14T05:14:53 GMT-07:00" name="Default suite" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="18394">
     <groups>
     </groups>
-    <test started-at="2025-10-14T00:38:19 GMT-07:00" name="Default test" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="19143">
-      <class name="com.client.BookShop_AK.Module.EntranceExam">
-        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:19 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-14T00:38:19 GMT-07:00" duration-ms="32" status="PASS">
+    <test started-at="2025-10-14T05:14:53 GMT-07:00" name="Default test" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="18394">
+      <class name="com.client.BookShop_AK.Module.AcedemicAndProfessional">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:14:53 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-14T05:14:53 GMT-07:00" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
-        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:19 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-14T00:38:26 GMT-07:00" duration-ms="6517" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:14:53 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-14T05:15:02 GMT-07:00" duration-ms="9083" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@51e02154]]>
+                <![CDATA[org.testng.xml.XmlTest@d29d6705]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
-        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:26 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-14T00:38:28 GMT-07:00" duration-ms="1777" status="PASS">
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:02 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-14T05:15:04 GMT-07:00" duration-ms="1666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodConfigMethod -->
-        <test-method signature="clickOnEntreranceLink()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:28 GMT-07:00" name="clickOnEntreranceLink" finished-at="2025-10-14T00:38:37 GMT-07:00" duration-ms="9114" status="PASS">
+        <test-method signature="executeAcedemicAndProfessional()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:04 GMT-07:00" name="executeAcedemicAndProfessional" finished-at="2025-10-14T05:15:09 GMT-07:00" duration-ms="4836" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnEntreranceLink -->
-        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:37 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-14T00:38:37 GMT-07:00" duration-ms="33" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Order SuccessFully Placed!! Kindly Keep the cash Ready. It will be collected on Delivery}
-  (Session info: chrome=141.0.7390.66): Order SuccessFully Placed!! Kindly Keep the cash Ready. It will be collected on Delivery
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3dab89601e3697dfc0f3888e8a06c42e, findElement {using=xpath, value=//span[text()='LogOut']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54587/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3dab89601e3697dfc0f3888e8a06c42e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Order SuccessFully Placed!! Kindly Keep the cash Ready. It will be collected on Delivery}
-  (Session info: chrome=141.0.7390.66): Order SuccessFully Placed!! Kindly Keep the cash Ready. It will be collected on Delivery
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3dab89601e3697dfc0f3888e8a06c42e, findElement {using=xpath, value=//span[text()='LogOut']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54587/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3dab89601e3697dfc0f3888e8a06c42e
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at com.client.BookShopSystem.ObjectRepository.HomePage.logOut(HomePage.java:61)
-at com.client.BookShopSystem.BaseUtility.BaseClass.afterMethodConfigMethod(BaseClass.java:21)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        </test-method> <!-- executeAcedemicAndProfessional -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:09 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-14T05:15:09 GMT-07:00" duration-ms="595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodConfigMethod -->
-        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:37 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="1515" status="PASS">
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:09 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="2063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
-        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:38 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:11 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
-      </class> <!-- com.client.BookShop_AK.Module.EntranceExam -->
+      </class> <!-- com.client.BookShop_AK.Module.AcedemicAndProfessional -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
