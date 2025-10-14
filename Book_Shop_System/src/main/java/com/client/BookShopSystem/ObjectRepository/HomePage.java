@@ -1,10 +1,12 @@
 package com.client.BookShopSystem.ObjectRepository;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.client.BookShopSystem.GenericUtility.ExcelUtility;
 import com.client.BookShopSystem.GenericUtility.WebDriverUtility;
 
 public class HomePage {
@@ -62,6 +64,12 @@ public class HomePage {
 		webDrUtil.ExplicitWaitUntilAlertIsPresent();
 		webDrUtil.switcToAlertAccept();
 
+	}
+	
+	public WebElement getSideBarText(String variableText) {
+		
+		return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '"+variableText+"')]"));
+		
 	}
 
 }

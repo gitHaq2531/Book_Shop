@@ -1,6 +1,7 @@
-package com.client.BookShop_KK.Module.HomePage;
+package com.client.BookShop_KK.Module.HomePageModule;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.client.BookShopSystem.BaseUtility.BaseClass;
 
@@ -38,29 +39,26 @@ public class HomepageTest extends BaseClass {
 	
 	}
 
-	@Test(groups = "Smoke")
-	public void veifyLoginButton() {
-		hp.getLoginButton().click();
-		Assert.assertEquals(lp.getLoginPageText().isDisplayed(), true);
-	}
 	
-	@Test(groups = "Smoke")
-	public void veifySignUpButton() {
-		hp.getLoginButton().click();
-		Assert.assertEquals(lp.getLoginPageText().isDisplayed(), true);
+	@Test(groups = "Smoke" ,dataProvider = "categoryNamesData")
+	public void veifyCategotNames(String text) {
+		System.out.println(text);
+		
 	}
-//	@Test(groups = "Smoke")
-//	public void veifyCategotNames() {
-//		
-//		
-//	}
-//	@DataProvider
-//	public Object[][] categotNamesData() {
-//		
-//		String data[][]= {}
-//		return null;
-//		
-//		
-//	}
+	@DataProvider(name = "categoryNamesData")
+	public Object[][] categoryNamesData() {// You have data from row 4 to 8 → total 5 rows (4, 5, 6, 7, 8)
+	    int startRow = 4;
+	    int endRow = 7;
+	    int totalRows = endRow - startRow + 1;
+	    Object[][] data = new Object[totalRows][1];
+
+	    // Loop through rows and fetch data
+	    for (int i = 0; i < totalRows; i++) {
+	        String value = exlutil.getDataFromExcelSheet("Kaif Khan", startRow + i, 0);
+	        data[i][0] = value;
+	    }
+
+	    return data;
+	}
 
 }

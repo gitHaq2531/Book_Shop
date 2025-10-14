@@ -53,15 +53,27 @@ public class LoginPage {
 	public WebElement getLoginPageText() {
 		return loginPageText;
 	}
-	
+
+	@FindBy(id = "register_button")
+	private WebElement signUpButton;
+	public WebElement getSignUPButton() {
+		return signUpButton;
+	}
+
+	@FindBy(xpath = "//h4[.='Member Registration Form']")
+	private WebElement signUPPageText;
+
+	public WebElement getSignUPPageText() {
+		return signUPPageText;
+	}
+
 	public void login(String username, String password) {
 
 		getLoginButton().click();
 		emailTF.sendKeys(username);
 		passwordTF.sendKeys(password);
 		signInButton.click();
-	    webDrUtil.switcToAlertAccept();
-		
+		webDrUtil.switcToAlertAccept();
 
 	}
 
