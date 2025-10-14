@@ -1,5 +1,9 @@
 package com.client.BookShopSystem.BaseUtility;
 
+import java.time.Duration;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -14,7 +18,7 @@ public class BaseClass extends MaterBaseClass {
 
 	@AfterMethod(alwaysRun = true)
 	public void afterMethodConfigMethod() {
-		hp.logOut();
+        hp.logOut();
 		System.out.println("user LogOut...");
 
 	}

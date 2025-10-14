@@ -18,7 +18,7 @@ public class HomePage {
 
 	}
 
-	@FindBy(xpath = "//a[.=' LogOut ']")
+	@FindBy(xpath = "//span[text()='LogOut']")
 	private WebElement logOutButton;
 
 	public WebElement getLogOutButton() {

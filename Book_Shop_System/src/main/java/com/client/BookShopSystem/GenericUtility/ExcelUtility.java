@@ -9,16 +9,8 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtility {
-<<<<<<< HEAD
-	public String getDataFromExcelSheet(String SheetName, int rownum,int celnum ) throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("./Test Data/TestData.xlsx") ;
-		Workbook wb= WorkbookFactory.create(fis);
-		Sheet sh= wb.getSheet(SheetName);
-		Row row = sh.getRow(rownum);
-		 Cell cel= row.getCell(celnum);
-		 String data =cel.toString().trim();
-		 wb.close();
-=======
+
+	
 	private static final String path = "./Test Data/TestData.xlsx";
 	public String getDataFromExcelSheet(String SheetName, int rownum, int celnum) {
 		String data = null;
@@ -37,19 +29,13 @@ public class ExcelUtility {
 			e.printStackTrace();
 		}
 
->>>>>>> refs/remotes/upstream/master
+
 		return data;
 
 	}
-<<<<<<< HEAD
+
 	
-	public int getRowCount(String SheetName) throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("./Test Data/TestData.xlsx") ;
-		Workbook wb=WorkbookFactory.create(fis);
-		Sheet sh =wb.getSheet(SheetName);
-		int rowcount = sh.getLastRowNum();
-		wb.close();
-=======
+	
 
 	public int getRowCount(String SheetName) {
 		int rowcount = 0;
@@ -64,27 +50,13 @@ public class ExcelUtility {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
->>>>>>> refs/remotes/upstream/master
+
 		return rowcount;
 
 	}
-<<<<<<< HEAD
+
 	
-	public void writeDataBackToExcel(String SheetName,int rownum, int cellnum, 
-			String value) throws IOException {
-		FileInputStream fis = new FileInputStream("./Test Data/TestData.xlsx");
-		Workbook wb = WorkbookFactory.create(fis);
-		Sheet sh =wb.getSheet(SheetName);
-		 Row row = sh.getRow(rownum);
-		if (row == null) {  
-		  row = sh.createRow(rownum);}
-		Cell cell =row.createCell(cellnum);
-		cell.setCellValue(value);
-		
-		FileOutputStream fos = new FileOutputStream("./Test Data/TestData.xlsx");
-		wb.write(fos);
-		wb.close();
-=======
+	
 
 	public void writeDataBackToExcel(String SheetName, int rownum, int cellnum, String value) {
 		try {
@@ -105,7 +77,7 @@ public class ExcelUtility {
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
->>>>>>> refs/remotes/upstream/master
+
 		}
 	}
 }
