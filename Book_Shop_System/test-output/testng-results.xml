@@ -1,48 +1,501 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-10-15T04:40:30 GMT-07:00" name="Default suite" finished-at="2025-10-15T04:40:49 GMT-07:00" duration-ms="18746">
+=======
+<<<<<<< HEAD
+  <suite started-at="2025-10-15T17:20:22 IST" name="Default suite" finished-at="2025-10-15T17:20:27 IST" duration-ms="4574">
+=======
+<<<<<<< HEAD
+  <suite started-at="2025-10-14T05:14:53 GMT-07:00" name="Default suite" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="18394">
+=======
+<<<<<<< HEAD
+  <suite started-at="2025-10-14T15:57:04 IST" name="Default suite" finished-at="2025-10-14T15:57:28 IST" duration-ms="23645">
+=======
+  <suite started-at="2025-10-14T00:38:19 GMT-07:00" name="Default suite" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="19143">
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
     <groups>
+<<<<<<< HEAD
+=======
+      <group name="integration">
+        <method signature="ChildrenAndTeensTest.integrationBetweenChildAndTeensLinkAndProductListingPage()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" name="integrationBetweenChildAndTeensLinkAndProductListingPage" class="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest"/>
+      </group> <!-- integration -->
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
     </groups>
+<<<<<<< HEAD
     <test started-at="2025-10-15T04:40:30 GMT-07:00" name="Default test" finished-at="2025-10-15T04:40:49 GMT-07:00" duration-ms="18746">
       <class name="com.client.BookShop_AK.Module.NewArrivalsTest">
         <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.NewArrivalsTest@c730b35]" started-at="2025-10-15T04:40:30 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-15T04:40:30 GMT-07:00" duration-ms="45" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2025-10-15T17:20:22 IST" name="Default test" finished-at="2025-10-15T17:20:27 IST" duration-ms="4574">
+      <class name="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:22 IST" name="beforeSuitConfigMethod" finished-at="2025-10-15T17:20:22 IST" duration-ms="11" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2025-10-14T05:14:53 GMT-07:00" name="Default test" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="18394">
+      <class name="com.client.BookShop_AK.Module.AcedemicAndProfessional">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:14:53 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-14T05:14:53 GMT-07:00" duration-ms="31" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2025-10-14T15:57:04 IST" name="Default test" finished-at="2025-10-14T15:57:28 IST" duration-ms="23645">
+      <class name="com.client.BookShop_KK.Module.HomePageModule.HomepageTest">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:04 IST" name="beforeSuitConfigMethod" finished-at="2025-10-14T15:57:04 IST" duration-ms="9" status="PASS">
+=======
+    <test started-at="2025-10-14T00:38:19 GMT-07:00" name="Default test" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="19143">
+      <class name="com.client.BookShop_AK.Module.EntranceExam">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:19 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-14T00:38:19 GMT-07:00" duration-ms="32" status="PASS">
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.NewArrivalsTest@c730b35]" started-at="2025-10-15T04:40:30 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-15T04:40:39 GMT-07:00" duration-ms="8955" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:22 IST" name="beforeClassConfigMethod" finished-at="2025-10-15T17:20:25 IST" duration-ms="2645" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:14:53 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-14T05:15:02 GMT-07:00" duration-ms="9083" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:04 IST" name="beforeClassConfigMethod" finished-at="2025-10-14T15:57:06 IST" duration-ms="2321" status="PASS">
+=======
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:19 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-14T00:38:26 GMT-07:00" duration-ms="6517" status="PASS">
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[org.testng.xml.XmlTest@4a01b223]]>
+=======
+<<<<<<< HEAD
+                <![CDATA[org.testng.xml.XmlTest@9ac9ab4b]]>
+=======
+<<<<<<< HEAD
+                <![CDATA[org.testng.xml.XmlTest@d29d6705]]>
+=======
+<<<<<<< HEAD
+                <![CDATA[org.testng.xml.XmlTest@6906fcc4]]>
+=======
+                <![CDATA[org.testng.xml.XmlTest@51e02154]]>
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.NewArrivalsTest@c730b35]" started-at="2025-10-15T04:40:39 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-15T04:40:41 GMT-07:00" duration-ms="2266" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:25 IST" name="beforeMethodConfigMethod" finished-at="2025-10-15T17:20:26 IST" duration-ms="699" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:02 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-14T05:15:04 GMT-07:00" duration-ms="1666" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:08 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:09 IST" duration-ms="684" status="PASS">
+=======
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:26 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-14T00:38:28 GMT-07:00" duration-ms="1777" status="PASS">
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodConfigMethod -->
+<<<<<<< HEAD
         <test-method signature="getAllNewArrivals()[pri:0, instance:com.client.BookShop_AK.Module.NewArrivalsTest@c730b35]" started-at="2025-10-15T04:40:41 GMT-07:00" name="getAllNewArrivals" finished-at="2025-10-15T04:40:47 GMT-07:00" duration-ms="5137" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="integrationBetweenChildAndTeensLinkAndProductListingPage()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:26 IST" name="integrationBetweenChildAndTeensLinkAndProductListingPage" finished-at="2025-10-15T17:20:26 IST" duration-ms="565" status="FAIL">
+          <exception class="java.lang.AssertionError">
+=======
+<<<<<<< HEAD
+        <test-method signature="executeAcedemicAndProfessional()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:04 GMT-07:00" name="executeAcedemicAndProfessional" finished-at="2025-10-14T05:15:09 GMT-07:00" duration-ms="4836" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="veifyCategoryNames(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:09 IST" name="veifyCategoryNames" data-provider="categoryNamesData" finished-at="2025-10-14T15:57:09 IST" duration-ms="138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Children ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Children and Teens STORE]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getAllNewArrivals -->
         <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.NewArrivalsTest@c730b35]" started-at="2025-10-15T04:40:47 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-15T04:40:47 GMT-07:00" duration-ms="837" status="PASS">
+=======
+        </test-method> <!-- veifyCategoryNames -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:09 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:09 IST" duration-ms="234" status="PASS">
+=======
+        <test-method signature="clickOnEntreranceLink()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:28 GMT-07:00" name="clickOnEntreranceLink" finished-at="2025-10-14T00:38:37 GMT-07:00" duration-ms="9114" status="PASS">
+>>>>>>> refs/remotes/upstream/master
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- executeAcedemicAndProfessional -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:09 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-14T05:15:09 GMT-07:00" duration-ms="595" status="PASS">
+=======
+        </test-method> <!-- clickOnEntreranceLink -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:37 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-14T00:38:37 GMT-07:00" duration-ms="33" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+>>>>>>> refs/remotes/origin/master
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.integrationBetweenChildAndTeensLinkAndProductListingPage(ChildrenAndTeensTest.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+<<<<<<< HEAD
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationBetweenChildAndTeensLinkAndProductListingPage -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:26 IST" name="afterMethodConfigMethod" finished-at="2025-10-15T17:20:26 IST" duration-ms="281" status="PASS">
+=======
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodConfigMethod -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.NewArrivalsTest@c730b35]" started-at="2025-10-15T04:40:47 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-15T04:40:49 GMT-07:00" duration-ms="1346" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:26 IST" name="afterClassConfigMethod" finished-at="2025-10-15T17:20:27 IST" duration-ms="314" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:09 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="2063" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:09 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:11 IST" duration-ms="1148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="veifyCategoryNames(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:11 IST" name="veifyCategoryNames" data-provider="categoryNamesData" finished-at="2025-10-14T15:57:11 IST" duration-ms="112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Regional ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Regional Books STORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veifyCategoryNames -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:11 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:11 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:11 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:12 IST" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="veifyCategoryNames(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:12 IST" name="veifyCategoryNames" data-provider="categoryNamesData" finished-at="2025-10-14T15:57:12 IST" duration-ms="123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Business]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Business and Management STORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veifyCategoryNames -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:12 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:12 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:12 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:14 IST" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="veifyCategoryNames(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:14 IST" name="veifyCategoryNames" data-provider="categoryNamesData" finished-at="2025-10-14T15:57:14 IST" duration-ms="164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Health ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Health and Cooking STORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veifyCategoryNames -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:14 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:14 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:15 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:16 IST" duration-ms="1152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="veifyCategorylink(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:16 IST" name="veifyCategorylink" data-provider="categoryNamesData" finished-at="2025-10-14T15:57:16 IST" duration-ms="419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Children ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Children and Teens STORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veifyCategorylink -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:16 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:16 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:16 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:17 IST" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="veifyCategorylink(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:17 IST" name="veifyCategorylink" data-provider="categoryNamesData" finished-at="2025-10-14T15:57:18 IST" duration-ms="290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Regional ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Regional Books STORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veifyCategorylink -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:18 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:18 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:18 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:19 IST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="veifyCategorylink(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:19 IST" name="veifyCategorylink" data-provider="categoryNamesData" finished-at="2025-10-14T15:57:19 IST" duration-ms="337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Business]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Business and Management STORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veifyCategorylink -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:19 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:20 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:20 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:21 IST" duration-ms="1148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="veifyCategorylink(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:21 IST" name="veifyCategorylink" data-provider="categoryNamesData" finished-at="2025-10-14T15:57:21 IST" duration-ms="313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Health ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Health and Cooking STORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veifyCategorylink -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:21 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:21 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:21 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:22 IST" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="verifyBookbirdLogoDisplayed()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:22 IST" name="verifyBookbirdLogoDisplayed" finished-at="2025-10-14T15:57:22 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookbirdLogoDisplayed -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:22 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:22 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:22 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:24 IST" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="verifyNavigationToHomePageViaLogo()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:24 IST" name="verifyNavigationToHomePageViaLogo" finished-at="2025-10-14T15:57:24 IST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToHomePageViaLogo -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:24 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:25 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:25 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:25 IST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="verifySerarchBaarVisiblity()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:25 IST" name="verifySerarchBaarVisiblity" finished-at="2025-10-14T15:57:25 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySerarchBaarVisiblity -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:25 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:25 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:25 IST" name="beforeMethodConfigMethod" finished-at="2025-10-14T15:57:27 IST" duration-ms="1133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="verifySerarchBaarWithValidBookName()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:27 IST" name="verifySerarchBaarWithValidBookName" finished-at="2025-10-14T15:57:27 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySerarchBaarWithValidBookName -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:27 IST" name="afterMethodConfigMethod" finished-at="2025-10-14T15:57:27 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:27 IST" name="afterClassConfigMethod" finished-at="2025-10-14T15:57:28 IST" duration-ms="401" status="PASS">
+=======
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:37 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="1515" status="PASS">
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.NewArrivalsTest@c730b35]" started-at="2025-10-15T04:40:49 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-15T04:40:49 GMT-07:00" duration-ms="2" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:27 IST" name="afterSuiteConfigMethod" finished-at="2025-10-15T17:20:27 IST" duration-ms="1" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:11 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="2" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" started-at="2025-10-14T15:57:28 IST" name="afterSuiteConfigMethod" finished-at="2025-10-14T15:57:28 IST" duration-ms="0" status="PASS">
+=======
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:38 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="3" status="PASS">
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
+<<<<<<< HEAD
       </class> <!-- com.client.BookShop_AK.Module.NewArrivalsTest -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.client.BookShop_AK.Module.AcedemicAndProfessional -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.client.BookShop_KK.Module.HomePageModule.HomepageTest -->
+=======
+      </class> <!-- com.client.BookShop_AK.Module.EntranceExam -->
+>>>>>>> refs/remotes/UpStream/master
+>>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> branch 'master' of https://github.com/gitHaq2531/Book_Shop.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

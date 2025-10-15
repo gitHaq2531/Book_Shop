@@ -20,7 +20,7 @@ import com.client.BookShopSystem.ObjectRepository.EntranceExamPage;
 
 
 
-public class EntranceExam extends BaseClass  {
+public class EntranceExamTest extends BaseClass  {
 	@Test
 	public void clickOnEntreranceLink() throws InterruptedException, EncryptedDocumentException, IOException {
      System.out.println("=== Test Execution Started: Click Entrance Exam ===");

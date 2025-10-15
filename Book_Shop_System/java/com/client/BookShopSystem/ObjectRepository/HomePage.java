@@ -59,6 +59,41 @@ public class HomePage {
 		return loginButton;
 	}
 
+	@FindBy(xpath =  "	//h3[text()=' POPULAR AUTHORS ']")
+	private WebElement popularAuthorsText;
+	public WebElement getPopularAuthorText() {
+		return popularAuthorsText;
+	}
+
+	@FindBy(xpath =  "//a[contains(@href, 'Durjoy')]")
+	private WebElement authorDurjoy;
+	public WebElement getauthorDurjoy() {
+		return authorDurjoy;
+	}
+	
+	@FindBy(xpath =  "//div[@id='category']//a[contains(text(), 'Child')]")
+	private WebElement childAndTeenLink;
+	public WebElement getchildAndTeenLink() {
+		return childAndTeenLink;
+	}
+	
+//	@FindBy(xpath =  "	//h3[text()=' POPULAR AUTHORS ']")
+//	private WebElement bannerImageLink;
+//	public WebElement getBannerImagelink() {
+//		return popularAuthorsText;
+//	}
+//
+//	@FindBy(xpath =  "//a[contains(@href, 'Durjoy')]")
+//	private WebElement authorDurjoy;
+//	public WebElement getauthorDurjoy() {
+//		return authorDurjoy;
+//	}
+	
+	
+	
+	
+	
+//	-------------------------------------Business Logic -----------------------------------------
 	public void logOut() {
 		logOutButton.click();
 		webDrUtil.ExplicitWaitUntilAlertIsPresent();
@@ -67,8 +102,7 @@ public class HomePage {
 	}
 	
 	public WebElement getSideBarText(String variableText) {
-		
-		return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '"+variableText+"')]"));
+	return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '"+variableText+"')]"));
 		
 	}
 
