@@ -8,8 +8,8 @@
           <include name="afterMethodConfigMethod"/>
           <include name="beforeMethodConfigMethod"/>
           <include name="afterClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
           <include name="beforeSuitConfigMethod"/>
           <include name="integrationBetweenChildAndTeensLinkAndProductListingPage"/>
         </methods>

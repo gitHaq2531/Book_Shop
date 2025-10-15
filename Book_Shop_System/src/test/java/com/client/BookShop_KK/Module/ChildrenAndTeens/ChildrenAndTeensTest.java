@@ -15,7 +15,9 @@ public class ChildrenAndTeensTest extends BaseClass {
 		Assert.assertEquals(plp.getHeading().isDisplayed(), true);
 		 plp.getFirstBook().isDisplayed();
 		WebElement book = plp.getFirstBook();
-		String priceAfterDiscount = book.getText().substring(book.getText().length() - 13,book.getText().length() - 10);
+		int priceAfterDiscount =Integer.parseInt( book.getText().substring(book.getText().length() - 13,book.getText().length() - 10));
+		Assert.assertTrue(priceAfterDiscount>0);
+		plp.getActualPrice().isDisplayed();
 	}
 
 }

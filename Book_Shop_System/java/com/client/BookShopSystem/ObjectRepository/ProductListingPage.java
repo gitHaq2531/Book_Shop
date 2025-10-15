@@ -33,4 +33,10 @@ public class ProductListingPage {
 	public WebElement getHeading() {
 		return heading;
 	}
+	@FindBy(xpath = "//span[contains(@style,'line-through;')]")
+	private WebElement actualPrice;
+	public WebElement getActualPrice() {
+		return actualPrice;
+	}
+	
 }
