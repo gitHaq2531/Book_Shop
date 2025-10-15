@@ -3,10 +3,7 @@ package com.client.BookShop_KK.Module.HomePageModule;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.Status;
 import com.client.BookShopSystem.BaseUtility.BaseClass;
-import com.client.BookShopSystem.BaseUtility.UtilityClassObject;
 
 public class HomepageTest extends BaseClass {
 	@Test(groups = "Smoke")
@@ -38,25 +35,48 @@ public class HomepageTest extends BaseClass {
 		Assert.assertEquals(hp.getSearchBar().isDisplayed(), true);
 		hp.getSearchBar().sendKeys(expected);
 		hp.getSearchBar().submit();
-		 plp.getRandomeBook().isDisplayed();
-	
+		plp.getRandomeBook().isDisplayed();
 	}
 
-	
-	@Test(groups = "Smoke" ,dataProvider = "categoryNamesData")
-	public void veifyCategoryNames(String name, String n) {
-		String text =hp.getSideBarText(name).getText();
-		Assert.assertEquals(hp.getSideBarText(text).isDisplayed(), true);
-		
+	@Test(groups = "Smoke")
+	public void veifyCategoryNames() {
+		// Loop through rows and fetch data
+		for (int i = 4; i < 8; i++) {
+			String name = exlutil.getDataFromExcelSheet("Kaif Khan", i, 0);
+			System.out.println(name);
+			String text = hp.getSideBarText(name).getText();
+			Assert.assertEquals(hp.getSideBarText(text).isDisplayed(), true);
+		}
 	}
-	@Test(groups = "Smoke",dataProvider = "categoryNamesData")
+
+	@Test(groups = "Smoke", dataProvider = "categoryNamesData")
 
 	public void veifyCategorylink(String name, String n) {
 		hp.getSideBarText(name).click();
 		String text = plp.getHeading().getText();
 		Assert.assertEquals(text.toLowerCase(), n.toLowerCase());
 //		UtilityClassObject.getTest().log(Status.INFO, text+" Link is working");
+
+	}
+	
+	@Test(groups = "Smoke")
+	public void verifyPopularAuthorDisplayed() {
+		Assert.assertEquals(hp.getPopularAuthorText().isDisplayed(), true);
+	}
+	@Test(groups = "Smoke")
+	public void verifyPopularAuthorLink() {
 		
+		webDrUtil.scrollToElement(hp.getPopularAuthorText());
+		hp.getauthorDurjoy().click();
+		String text = plp.getHeading().getText();
+		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
+	}
+	public void verifyBannerLinkLink() {
+		
+		webDrUtil.scrollToElement(hp.getPopularAuthorText());
+		hp.getauthorDurjoy().click();
+		String text = plp.getHeading().getText();
+		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
 	}
 	
 	@DataProvider(name = "categoryNamesData")
