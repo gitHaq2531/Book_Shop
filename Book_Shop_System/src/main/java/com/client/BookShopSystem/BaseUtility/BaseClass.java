@@ -1,7 +1,8 @@
 package com.client.BookShopSystem.BaseUtility;
 
 import java.time.Duration;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -17,10 +18,18 @@ public class BaseClass extends MaterBaseClass {
 	}
 
 	@AfterMethod(alwaysRun = true)
-	public void afterMethodConfigMethod() {
-        hp.logOut();
-		System.out.println("user LogOut...");
+	public void afterMethodConfigMethod() {try {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement logoutBtn = wait.until(ExpectedConditions.elementToBeClickable(
+	            By.xpath("//span[contains(text(),'LogOut')]")
+	        ));
+	        logoutBtn.click();
+	        System.out.println("Logged out successfully.");
+	    }
+	catch (Exception e) {
+	        System.out.println("LogOut button not found or not clickable, skipping logout.");
+	    }
 
 	}
-
 }
+

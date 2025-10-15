@@ -34,9 +34,6 @@ public class ExcelUtility {
 
 	}
 
-	
-	
-
 	public int getRowCount(String SheetName) {
 		int rowcount = 0;
 		try {
@@ -55,29 +52,42 @@ public class ExcelUtility {
 
 	}
 
-	
-	
+	public void writeDataBackToExcel(String sheetName, int rownum, int cellnum, String value) {
+	    try {
+	        // Open the Excel file
+	        FileInputStream fis = new FileInputStream(path);
+	        Workbook wb = WorkbookFactory.create(fis);
+	        fis.close(); // close input stream after reading
 
-	public void writeDataBackToExcel(String SheetName, int rownum, int cellnum, String value) {
-		try {
-			FileInputStream fis = new FileInputStream(path);
-			Workbook wb = WorkbookFactory.create(fis);
-			Sheet sh = wb.getSheet(SheetName);
-			Row row = sh.getRow(rownum);
-			if (row == null) {
-				row = sh.createRow(rownum);
-			}
-			Cell cell = row.createCell(cellnum);
-			cell.setCellValue(value);
+	        // Get or create the sheet
+	        Sheet sh = wb.getSheet(sheetName);
+	        if (sh == null) {
+	            sh = wb.createSheet(sheetName); // assign new sheet to 'sh'
+	        }
 
-			FileOutputStream fos = new FileOutputStream(path);
-			wb.write(fos);
-			wb.close();
+	        // Get or create the row
+	        Row row = sh.getRow(rownum);
+	        if (row == null) {
+	            row = sh.createRow(rownum);
+	        }
 
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
+	        // Create the cell and set value
+	        Cell cell = row.createCell(cellnum);
+	        cell.setCellValue(value);
 
-		}
+	        // Write changes back to the file
+	        FileOutputStream fos = new FileOutputStream(path);
+	        wb.write(fos);
+	        fos.close(); // close output stream
+	        wb.close();
+
+	        System.out.println("Data written to Excel successfully: " + value);
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
 	}
-}
+	
+	
+
+	}
