@@ -71,13 +71,8 @@ public class HomepageTest extends BaseClass {
 	        String value = exlutil.getDataFromExcelSheet("Kaif Khan", startRow + i, 0);
 	        String value2 = exlutil.getDataFromExcelSheet("Kaif Khan", startRow + i, 1);
 	        data[i][1]=value2;
-	        data[i][0] = value;
-	        
-	    }
-	    
+	        data[i][0] = value;   
+	    } 
 	    return data;
 	}
-	
-
-
 }
