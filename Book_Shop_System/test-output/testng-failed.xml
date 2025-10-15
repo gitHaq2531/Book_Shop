@@ -3,17 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.client.BookShop_KK.Module.HomePageModule.HomepageTest">
+=======
       <class name="com.client.BookShop_AK.Module.EntranceExam">
+>>>>>>> refs/remotes/UpStream/master
         <methods>
           <include name="afterMethodConfigMethod"/>
           <include name="beforeMethodConfigMethod"/>
           <include name="afterClassConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="veifyCategorylink" invocation-numbers="0 1 2 3"/>
           <include name="beforeSuitConfigMethod"/>
+<<<<<<< HEAD
+=======
           <include name="clickOnEntreranceLink"/>
+>>>>>>> refs/remotes/UpStream/master
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.client.BookShop_KK.Module.HomePageModule.HomepageTest -->
+=======
       </class> <!-- com.client.BookShop_AK.Module.EntranceExam -->
+>>>>>>> refs/remotes/UpStream/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
