@@ -1,14 +1,10 @@
 package com.client.BookShopSystem.ObjectRepository;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
-import com.client.BookShopSystem.GenericUtility.ExcelUtility;
 import com.client.BookShopSystem.GenericUtility.WebDriverUtility;
 
 public class HomePage {
@@ -21,8 +17,10 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 
 	}
-	@FindBy(xpath = "//a[contains(.,'LogOut')]")
+
+	@FindBy(xpath = "//span[text()='LogOut']")
 	private WebElement logOutButton;
+
 	public WebElement getLogOutButton() {
 		return logOutButton;
 	}
@@ -64,12 +62,6 @@ public class HomePage {
 		webDrUtil.ExplicitWaitUntilAlertIsPresent();
 		webDrUtil.switcToAlertAccept();
 
-	}
-	
-	public WebElement getSideBarText(String variableText) {
-		
-		return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '"+variableText+"')]"));
-		
 	}
 
 }
