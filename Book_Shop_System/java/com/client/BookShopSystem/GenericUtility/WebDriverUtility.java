@@ -3,6 +3,7 @@ package com.client.BookShopSystem.GenericUtility;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -44,6 +45,10 @@ public class WebDriverUtility {
 	
 	public void ExplicitWaitUntilAlertIsPresent() {
 		expWait.until(ExpectedConditions.alertIsPresent());
+		
+	}
+	public void waitUntilElementToBeClickable(WebElement element) {
+		expWait.until(ExpectedConditions.elementToBeClickable(element));
 		
 	}
 }
