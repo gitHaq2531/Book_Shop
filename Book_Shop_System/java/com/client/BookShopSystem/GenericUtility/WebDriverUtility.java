@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -51,4 +52,19 @@ public class WebDriverUtility {
 		expWait.until(ExpectedConditions.elementToBeClickable(element));
 		
 	}
+	
+//	Mouse action from Action class
+	public void scrollToElement(WebElement element){
+		Actions act = new Actions(driver);
+		act.scrollToElement(element).perform();
+		act.scrollByAmount(0,350).perform();
+		
+	}	public void scrollByAmount(int a){
+		Actions act = new Actions(driver);
+		act.scrollByAmount(a, 0).perform();
+		
+	}
+
+
+
 }

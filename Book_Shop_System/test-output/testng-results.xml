@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
-=======
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
->>>>>>> refs/remotes/UpStream/master
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2025-10-15T17:20:22 IST" name="Default suite" finished-at="2025-10-15T17:20:27 IST" duration-ms="4574">
+=======
 <<<<<<< HEAD
   <suite started-at="2025-10-14T05:14:53 GMT-07:00" name="Default suite" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="18394">
 =======
@@ -15,19 +14,17 @@
   <suite started-at="2025-10-14T00:38:19 GMT-07:00" name="Default suite" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="19143">
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
     <groups>
-<<<<<<< HEAD
-      <group name="Smoke">
-        <method signature="HomepageTest.veifyCategoryNames(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" name="veifyCategoryNames" class="com.client.BookShop_KK.Module.HomePageModule.HomepageTest"/>
-        <method signature="HomepageTest.veifyCategorylink(java.lang.String,java.lang.String)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" name="veifyCategorylink" class="com.client.BookShop_KK.Module.HomePageModule.HomepageTest"/>
-        <method signature="HomepageTest.verifyBookbirdLogoDisplayed()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" name="verifyBookbirdLogoDisplayed" class="com.client.BookShop_KK.Module.HomePageModule.HomepageTest"/>
-        <method signature="HomepageTest.verifyNavigationToHomePageViaLogo()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" name="verifyNavigationToHomePageViaLogo" class="com.client.BookShop_KK.Module.HomePageModule.HomepageTest"/>
-        <method signature="HomepageTest.verifySerarchBaarVisiblity()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" name="verifySerarchBaarVisiblity" class="com.client.BookShop_KK.Module.HomePageModule.HomepageTest"/>
-        <method signature="HomepageTest.verifySerarchBaarWithValidBookName()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomepageTest@10683d9d]" name="verifySerarchBaarWithValidBookName" class="com.client.BookShop_KK.Module.HomePageModule.HomepageTest"/>
-      </group> <!-- Smoke -->
-=======
->>>>>>> refs/remotes/UpStream/master
+      <group name="integration">
+        <method signature="ChildrenAndTeensTest.integrationBetweenChildAndTeensLinkAndProductListingPage()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" name="integrationBetweenChildAndTeensLinkAndProductListingPage" class="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest"/>
+      </group> <!-- integration -->
     </groups>
+<<<<<<< HEAD
+    <test started-at="2025-10-15T17:20:22 IST" name="Default test" finished-at="2025-10-15T17:20:27 IST" duration-ms="4574">
+      <class name="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:22 IST" name="beforeSuitConfigMethod" finished-at="2025-10-15T17:20:22 IST" duration-ms="11" status="PASS">
+=======
 <<<<<<< HEAD
     <test started-at="2025-10-14T05:14:53 GMT-07:00" name="Default test" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="18394">
       <class name="com.client.BookShop_AK.Module.AcedemicAndProfessional">
@@ -43,9 +40,13 @@
         <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:19 GMT-07:00" name="beforeSuitConfigMethod" finished-at="2025-10-14T00:38:19 GMT-07:00" duration-ms="32" status="PASS">
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:22 IST" name="beforeClassConfigMethod" finished-at="2025-10-15T17:20:25 IST" duration-ms="2645" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:14:53 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-14T05:15:02 GMT-07:00" duration-ms="9083" status="PASS">
 =======
@@ -55,9 +56,13 @@
         <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:19 GMT-07:00" name="beforeClassConfigMethod" finished-at="2025-10-14T00:38:26 GMT-07:00" duration-ms="6517" status="PASS">
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
+                <![CDATA[org.testng.xml.XmlTest@9ac9ab4b]]>
+=======
 <<<<<<< HEAD
                 <![CDATA[org.testng.xml.XmlTest@d29d6705]]>
 =======
@@ -67,12 +72,16 @@
                 <![CDATA[org.testng.xml.XmlTest@51e02154]]>
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:25 IST" name="beforeMethodConfigMethod" finished-at="2025-10-15T17:20:26 IST" duration-ms="699" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:02 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-14T05:15:04 GMT-07:00" duration-ms="1666" status="PASS">
 =======
@@ -82,9 +91,14 @@
         <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:26 GMT-07:00" name="beforeMethodConfigMethod" finished-at="2025-10-14T00:38:28 GMT-07:00" duration-ms="1777" status="PASS">
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodConfigMethod -->
+<<<<<<< HEAD
+        <test-method signature="integrationBetweenChildAndTeensLinkAndProductListingPage()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:26 IST" name="integrationBetweenChildAndTeensLinkAndProductListingPage" finished-at="2025-10-15T17:20:26 IST" duration-ms="565" status="FAIL">
+          <exception class="java.lang.AssertionError">
+=======
 <<<<<<< HEAD
         <test-method signature="executeAcedemicAndProfessional()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:04 GMT-07:00" name="executeAcedemicAndProfessional" finished-at="2025-10-14T05:15:09 GMT-07:00" duration-ms="4836" status="PASS">
 =======
@@ -118,49 +132,21 @@
         </test-method> <!-- clickOnEntreranceLink -->
         <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:37 GMT-07:00" name="afterMethodConfigMethod" finished-at="2025-10-14T00:38:37 GMT-07:00" duration-ms="33" status="FAIL">
           <exception class="org.openqa.selenium.UnhandledAlertException">
+>>>>>>> refs/remotes/origin/master
             <message>
-              <![CDATA[unexpected alert open: {Alert text : Order SuccessFully Placed!! Kindly Keep the cash Ready. It will be collected on Delivery}
-  (Session info: chrome=141.0.7390.66): Order SuccessFully Placed!! Kindly Keep the cash Ready. It will be collected on Delivery
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3dab89601e3697dfc0f3888e8a06c42e, findElement {using=xpath, value=//span[text()='LogOut']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54587/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3dab89601e3697dfc0f3888e8a06c42e]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Order SuccessFully Placed!! Kindly Keep the cash Ready. It will be collected on Delivery}
-  (Session info: chrome=141.0.7390.66): Order SuccessFully Placed!! Kindly Keep the cash Ready. It will be collected on Delivery
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3dab89601e3697dfc0f3888e8a06c42e, findElement {using=xpath, value=//span[text()='LogOut']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54587/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3dab89601e3697dfc0f3888e8a06c42e
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at com.client.BookShopSystem.ObjectRepository.HomePage.logOut(HomePage.java:61)
-at com.client.BookShopSystem.BaseUtility.BaseClass.afterMethodConfigMethod(BaseClass.java:21)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.integrationBetweenChildAndTeensLinkAndProductListingPage(ChildrenAndTeensTest.java:21)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -185,12 +171,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationBetweenChildAndTeensLinkAndProductListingPage -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:26 IST" name="afterMethodConfigMethod" finished-at="2025-10-15T17:20:26 IST" duration-ms="281" status="PASS">
+=======
           </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodConfigMethod -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:26 IST" name="afterClassConfigMethod" finished-at="2025-10-15T17:20:27 IST" duration-ms="314" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:09 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="2063" status="PASS">
 =======
@@ -416,9 +413,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:37 GMT-07:00" name="afterClassConfigMethod" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="1515" status="PASS">
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@c730b35]" started-at="2025-10-15T17:20:27 IST" name="afterSuiteConfigMethod" finished-at="2025-10-15T17:20:27 IST" duration-ms="1" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.AcedemicAndProfessional@c730b35]" started-at="2025-10-14T05:15:11 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-14T05:15:11 GMT-07:00" duration-ms="2" status="PASS">
 =======
@@ -428,9 +429,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_AK.Module.EntranceExam@45752059]" started-at="2025-10-14T00:38:38 GMT-07:00" name="afterSuiteConfigMethod" finished-at="2025-10-14T00:38:38 GMT-07:00" duration-ms="3" status="PASS">
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
+<<<<<<< HEAD
+      </class> <!-- com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.client.BookShop_AK.Module.AcedemicAndProfessional -->
 =======
@@ -440,6 +445,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
       </class> <!-- com.client.BookShop_AK.Module.EntranceExam -->
 >>>>>>> refs/remotes/UpStream/master
 >>>>>>> refs/remotes/upstream/master
+>>>>>>> refs/remotes/origin/master
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
