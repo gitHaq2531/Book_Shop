@@ -69,7 +69,21 @@ public class HomepageTest extends BaseClass {
 	public void verifyPopularAuthorDisplayed() {
 		Assert.assertEquals(hp.getPopularAuthorText().isDisplayed(), true);
 	}
-
+	@Test(groups = "Smoke")
+	public void verifyPopularAuthorLink() {
+		
+		webDrUtil.scrollToElement(hp.getPopularAuthorText());
+		hp.getauthorDurjoy().click();
+		String text = plp.getHeading().getText();
+		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
+	}
+public void verifyBannerLinkLink() {
+		
+		webDrUtil.scrollToElement(hp.getPopularAuthorText());
+		hp.getauthorDurjoy().click();
+		String text = plp.getHeading().getText();
+		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
+	}
 	
 	
 	
@@ -92,7 +106,6 @@ public class HomepageTest extends BaseClass {
 			String value2 = exlutil.getDataFromExcelSheet("Kaif Khan", startRow + i, 1);
 			data[i][1] = value2;
 			data[i][0] = value;
-
 		}
 
 		return data;

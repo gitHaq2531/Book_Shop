@@ -22,6 +22,12 @@ public class ProductListingPage {
 	public WebElement getRandomeBook() {
 		return randomeBook;
 	}
+	
+	@FindBy(xpath = "//div[@class='book-block']")
+	private WebElement firstBook;
+	public WebElement getFirstBook() {
+		return firstBook;
+	}
 	@FindBy(xpath = "//div[@id='heading']/h2")
 	private WebElement heading;
 	public WebElement getHeading() {
