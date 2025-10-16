@@ -14,5 +14,8 @@ public class ReadData {
 		System.out.println("hii");
 		
 		System.out.println("hiiii");
+		
+		System.out.println("hiiii5");
+		System.out.println("hiiii576667");
 	}
 }
