@@ -56,9 +56,8 @@ public class HomePage {
 		return searchBar;
 	}
 
-	@FindBy(id = "login_button")
+	@FindBy(xpath = "//button[@id='login_button' or .='Login']")
 	private WebElement loginButton;
-
 	public WebElement getLoginButton() {
 		return loginButton;
 	}
@@ -93,6 +92,8 @@ public class HomePage {
 	public WebElement gethealthandCookingOfferLink() {
 		return healthandCookingOfferLink;
 	}
+	
+	
 
 //	@FindBy(xpath =  "	//h3[text()=' POPULAR AUTHORS ']")
 //	private WebElement bannerImageLink;
@@ -115,7 +116,7 @@ public class HomePage {
 	}
 
 	public String getUserName() {
-		return greetText.getText().replace("Hello", "").trim();
+		return greetText.getText().replace("Hello", "").replace(".", "").trim();
 		
 	}
 	

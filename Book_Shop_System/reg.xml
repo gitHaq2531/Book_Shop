@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking"/>
+      <class name="src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest"/>
+      <class name="com.client.BookShop_KK.Module.HomePageModule.HomepageTest"/>
+      <class name="src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest"/>
+      <class name="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest"/>
+      <class name="src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement"/>
+      <class name="com.client.BookShop_KK.Module.HomePageModule.HomePage02Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

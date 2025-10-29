@@ -2,7 +2,9 @@ package com.client.BookShopSystem.ObjectRepository;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import com.client.BookShopSystem.GenericUtility.WebDriverUtility;
 
@@ -33,7 +35,8 @@ public class SignUpPage {
 		return passwordTF;
 		}
 	
-	@FindBy(name = "submit")
+	
+	@FindBy(xpath = "//button[@value='register' or contains(.,' Sign Up ')]")
 	private WebElement signUpBtn;
 	public WebElement getSignUpBtn() {
 		return signUpBtn;

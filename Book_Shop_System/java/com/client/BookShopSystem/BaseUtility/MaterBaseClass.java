@@ -16,6 +16,7 @@ import com.client.BookShopSystem.GenericUtility.WebDriverUtility;
 import com.client.BookShopSystem.ObjectRepository.HomePage;
 import com.client.BookShopSystem.ObjectRepository.LoginPage;
 import com.client.BookShopSystem.ObjectRepository.ProductListingPage;
+import com.client.BookShopSystem.ObjectRepository.SignUpPage;
 import com.client.BookShopSystem.ObjectRepository.AddToCartPage;
 import com.client.BookShopSystem.ObjectRepository.BookDetailPage;
 
@@ -30,6 +31,7 @@ public class MaterBaseClass {
 	public ProductListingPage plp;
 	public BookDetailPage pdp;
 	public AddToCartPage atc;
+	public SignUpPage sp;
 	@BeforeSuite(alwaysRun = true)
 	public void beforeSuitConfigMethod() {
 		System.out.println("suit level configuration start");
@@ -67,6 +69,7 @@ public class MaterBaseClass {
 		plp = new ProductListingPage(driver);
 		pdp = new BookDetailPage(driver);
 		atc = new AddToCartPage(driver);
+		sp = new SignUpPage(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
