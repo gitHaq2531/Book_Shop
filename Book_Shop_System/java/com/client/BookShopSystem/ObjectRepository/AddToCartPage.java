@@ -12,43 +12,57 @@ public class AddToCartPage {
 		PageFactory.initElements(driver,this);
 	}
 		
-		@FindBy (xpath="//a[@id='buyLink' and contains(text(),'ADD TO CART')]")
-		private WebElement AddToCartEDT;
-		
-		@FindBy(xpath="//a[text()='Place Order']")
-		private WebElement PalceOrderEDT;
-		
-		
-		@FindBy(xpath="//a[text()='Do Some Shopping']")
-		private WebElement MoreShoppingbtn;
-		
-		
-		public WebElement getMoreShoppingbtn() {
-			return MoreShoppingbtn;
-		}
 
-		public WebElement getPalceOrderEDT() {
-			return PalceOrderEDT;
-		}
+	@FindBy (xpath="//a[@id='buyLink' and contains(text(),'ADD TO CART')]")
+	private WebElement AddToCartEDT;
+	
+	@FindBy(xpath="//a[text()='Place Order']")
+	private WebElement PalceOrderEDT;
+	
+	
+	@FindBy(xpath="//a[text()='Do Some Shopping']")
+	private WebElement MoreShoppingbtn;
+	
+	
+	public WebElement getMoreShoppingbtn() {
+		return MoreShoppingbtn;
+	}
 
-		public WebElement getAddToCartEDT() {
-			return AddToCartEDT;
-		}
+	public WebElement getPalceOrderEDT() {
+		return PalceOrderEDT;
+	}
+
+	public WebElement getAddToCartEDT() {
+		return AddToCartEDT;
+	}
+	
+	public void clickAddToCart() {
+		AddToCartEDT.click();
+	    System.out.println("Clicked on 'Add to Cart' successfully.");
+	}
+	
+	public void clickOnPlaceOrder() {
+		PalceOrderEDT.click();
 		
-		public void clickAddToCart() {
-			AddToCartEDT.click();
-		    System.out.println("Clicked on 'Add to Cart' successfully.");
-		}
-		
-		public void clickOnPlaceOrder() {
-			PalceOrderEDT.click();
-			
-		}
-		public void clickOnMoreOptionbtn() {
-			MoreShoppingbtn.click();
-		}
-		
-		
+	}
+	public void clickOnMoreOptionbtn() {
+		MoreShoppingbtn.click();
+	}
+	
+	@FindBy(xpath = "//div[@class='panel-body']")
+	private WebElement orderDetail;
+	public WebElement getOrderDetail() {
+		return orderDetail;
+	}
+public String[] getProductDetailATC(WebElement element) {
+String text = element.getText();
+String title = text.split("Title :")[1].split("Code")[0].trim();
+String quantity = text.split("Quantity :")[1].split("Price")[0].trim();
+String price = text.split("Price :")[1].split("Sub")[0].trim();
+String details[]= {title,quantity,price};
+return details;
+
+}
 
 	
 

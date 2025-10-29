@@ -23,24 +23,28 @@ public class HomePage {
 	}
 	@FindBy(xpath = "//a[contains(.,'LogOut')]")
 	private WebElement logOutButton;
+
 	public WebElement getLogOutButton() {
 		return logOutButton;
 	}
 
 	@FindBy(xpath = "//a[@class='navbar-brand']")
 	private WebElement bookBirdLogo;
+
 	public WebElement getBookBirdLogo() {
 		return bookBirdLogo;
 	}
 
 	@FindBy(xpath = "//img[@class='block-center img-responsive']")
 	private WebElement randomeBook;
+
 	public WebElement getRandomeBook() {
 		return randomeBook;
 	}
 
 	@FindBy(xpath = "//div[@id='category']/div")
 	private WebElement theBookShopText;
+
 	public WebElement getTheBookShopText() {
 		return theBookShopText;
 	}
@@ -51,7 +55,7 @@ public class HomePage {
 	public WebElement getSearchBar() {
 		return searchBar;
 	}
-	
+
 	@FindBy(id = "login_button")
 	private WebElement loginButton;
 
@@ -59,24 +63,37 @@ public class HomePage {
 		return loginButton;
 	}
 
-	@FindBy(xpath =  "	//h3[text()=' POPULAR AUTHORS ']")
+	@FindBy(xpath = "//a[contains(text(),'Hello ')]")
+	private WebElement greetText;
+
+	@FindBy(xpath = "	//h3[text()=' POPULAR AUTHORS ']")
 	private WebElement popularAuthorsText;
+
 	public WebElement getPopularAuthorText() {
 		return popularAuthorsText;
 	}
 
-	@FindBy(xpath =  "//a[contains(@href, 'Durjoy')]")
+	@FindBy(xpath = "//a[contains(@href, 'Durjoy')]")
 	private WebElement authorDurjoy;
+
 	public WebElement getauthorDurjoy() {
 		return authorDurjoy;
 	}
-	
-	@FindBy(xpath =  "//div[@id='category']//a[contains(text(), 'Child')]")
+
+	@FindBy(xpath = "//div[@id='category']//a[contains(text(), 'Child')]")
 	private WebElement childAndTeenLink;
+
 	public WebElement getchildAndTeenLink() {
 		return childAndTeenLink;
 	}
-	
+
+	@FindBy(xpath = "//a[contains(@href,'Health')]/parent::div")
+	private WebElement healthandCookingOfferLink;
+
+	public WebElement gethealthandCookingOfferLink() {
+		return healthandCookingOfferLink;
+	}
+
 //	@FindBy(xpath =  "	//h3[text()=' POPULAR AUTHORS ']")
 //	private WebElement bannerImageLink;
 //	public WebElement getBannerImagelink() {
@@ -88,11 +105,7 @@ public class HomePage {
 //	public WebElement getauthorDurjoy() {
 //		return authorDurjoy;
 //	}
-	
-	
-	
-	
-	
+
 //	-------------------------------------Business Logic -----------------------------------------
 	public void logOut() {
 		logOutButton.click();
@@ -100,10 +113,14 @@ public class HomePage {
 		webDrUtil.switcToAlertAccept();
 
 	}
-	
-	public WebElement getSideBarText(String variableText) {
-	return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '"+variableText+"')]"));
+
+	public String getUserName() {
+		return greetText.getText().replace("Hello", "").trim();
 		
 	}
+	
+	public WebElement getSideBarText(String variableText) {
+		return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '" + variableText + "')]"));
 
+	}
 }
