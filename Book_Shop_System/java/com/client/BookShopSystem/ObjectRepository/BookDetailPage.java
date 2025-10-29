@@ -38,6 +38,11 @@ private WebElement bookName;
 public WebElement getbookName() {
 	return bookName;
 }
+@FindBy(id = "quantity")
+private WebElement quantityDropDown;
+public WebElement getQuantityDropDown() {
+	return bookName;
+}
 
 
 public int getPriceAfterDiscount(WebElement element) {

@@ -6,20 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverUtility {
 	WebDriver driver;
-	WebDriverWait expWait ;
+	WebDriverWait expWait;
 
 	public WebDriverUtility(WebDriver driver) {
 		this.driver = driver;
-		 expWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		expWait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	}
 
-	//SWITCH TO ALLER ACTIONS
-	
+	// SWITCH TO ALLER ACTIONS
+
 	public void switcToAlertAccept() {
 		ExplicitWaitUntilAlertIsPresent();
 		driver.switchTo().alert().accept();
@@ -41,30 +42,50 @@ public class WebDriverUtility {
 		return driver.switchTo().alert().getText();
 	}
 
-	
-	//EXPLICIT WAIT
-	
+	// EXPLICIT WAIT
+
 	public void ExplicitWaitUntilAlertIsPresent() {
 		expWait.until(ExpectedConditions.alertIsPresent());
-		
+
 	}
+
 	public void waitUntilElementToBeClickable(WebElement element) {
 		expWait.until(ExpectedConditions.elementToBeClickable(element));
-		
+
 	}
-	
+
 //	Mouse action from Action class
-	public void scrollToElement(WebElement element){
+	public void scrollToElement(WebElement element) {
 		Actions act = new Actions(driver);
 		act.scrollToElement(element).perform();
-		act.scrollByAmount(0,350).perform();
-		
-	}	public void scrollByAmount(int a){
-		Actions act = new Actions(driver);
-		act.scrollByAmount(a, 0).perform();
-		
+		act.scrollByAmount(0, 350).perform();
+
 	}
 
+	public void scrollByAmount(int a) {
+		Actions act = new Actions(driver);
+		act.scrollByAmount(a, 0).perform();
 
+	}
+
+	// <------------------------------------Select Class Util Start From Here
+	// ----------------------------------------->
+	public void selectByIndex(WebElement elemnt, int index) {
+
+		Select select = new Select(elemnt);
+		select.selectByIndex(index);
+
+	}
+
+	public void selectByValue(WebElement elemnt, String index) {
+		Select select = new Select(elemnt);
+		select.selectByIndex(Integer.parseInt(index));
+
+	}
+	public void selectByVisibleText(WebElement elemnt, String visibleText) {
+	
+		Select select = new Select(elemnt);
+		select.selectByIndex(Integer.parseInt(visibleText));
+	}
 
 }
