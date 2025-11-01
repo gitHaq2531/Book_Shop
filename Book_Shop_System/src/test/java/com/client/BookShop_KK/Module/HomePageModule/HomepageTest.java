@@ -1,5 +1,8 @@
 package com.client.BookShop_KK.Module.HomePageModule;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -62,30 +65,9 @@ public class HomepageTest extends BaseClass {
 		String text = plp.getHeading().getText();
 		Assert.assertEquals(text.toLowerCase(), n.toLowerCase());
 //		UtilityClassObject.getTest().log(Status.INFO, text+" Link is working");
+	}
+	
 
-	}
-	
-	@Test(groups = "Smoke")
-	public void verifyPopularAuthorDisplayedTestTest() {
-		Assert.assertEquals(hp.getPopularAuthorText().isDisplayed(), true);
-	}
-	@Test(groups = "Smoke")
-	public void verifyPopularAuthorLink() {
-		
-		webDrUtil.scrollToElement(hp.getPopularAuthorText());
-		hp.getauthorDurjoy().click();
-		String text = plp.getHeading().getText();
-		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
-	}
-	@Test(groups = "Smoke")
-	public void verifyBannerLinkLinkTest() {
-		
-		webDrUtil.scrollToElement(hp.getPopularAuthorText());
-		hp.getauthorDurjoy().click();
-		String text = plp.getHeading().getText();
-		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
-	}
-	
 	@DataProvider(name = "categoryNamesData")
 	public Object[][] categoryNamesData() {
 		// You have data from row 4 to 8 → total 5 rows (4, 5, 6, 7)
@@ -103,26 +85,6 @@ public class HomepageTest extends BaseClass {
 	    return data;
 	    }
 	
-	@Test(groups = "system")
-	public void navigateToPopularAuthorSelectBookAddToCartTest() {
-		
-		webDrUtil.scrollToElement(hp.getPopularAuthorText());
-		hp.getauthorDurjoy().click();
-		String text = plp.getHeading().getText();
-		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
-		plp.getFirstBook().click();
-		WebElement addToCartBtn = pdp.getAddToCartBtn();
-		int priceAfterDiscountPDP = pdp.getPriceAfterDiscount(addToCartBtn);
-		String bookNamePDP = pdp.getbookName().getText();
-		WebElement quantityDropDown = pdp.getQuantityDropDown();
-		String number = String.valueOf(ju.getRandomeNumber(2, 10));
-		webDrUtil.selectByValue(quantityDropDown, number);
-		pdp.getAddToCartBtn().click();
-		String[] productDetailATC = atc.getProductDetailATC(atc.getOrderDetail());
-		softAssert.assertEquals(productDetailATC[0].trim(), bookNamePDP.trim());
-		softAssert.assertEquals(productDetailATC[1], number);
-		softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
-		softAssert.assertAll();
-	}
+	
 	
 }

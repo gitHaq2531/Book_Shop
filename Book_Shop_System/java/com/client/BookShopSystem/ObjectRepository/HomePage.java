@@ -99,12 +99,12 @@ public class HomePage {
 //	public WebElement getBannerImagelink() {
 //		return popularAuthorsText;
 //	}
-//
-//	@FindBy(xpath =  "//a[contains(@href, 'Durjoy')]")
-//	private WebElement authorDurjoy;
-//	public WebElement getauthorDurjoy() {
-//		return authorDurjoy;
-//	}
+
+	@FindBy(xpath =  "//a[contains(@href, 'Durjoy')]")
+	private WebElement authorDurjo;
+	public WebElement getauthorDurjo() {
+		return authorDurjoy;
+	}
 
 //	-------------------------------------Business Logic -----------------------------------------
 	public void logOut() {
@@ -122,5 +122,7 @@ public class HomePage {
 	public WebElement getSideBarText(String variableText) {
 		return driver.findElement(By.xpath("//div[@id='category']//a[contains(text(), '" + variableText + "')]"));
 
+	}	public WebElement getAuthorName(String variableText) {
+		return driver.findElement(By.xpath("//a[contains(@href, '"+ variableText +"')]"));
 	}
 }

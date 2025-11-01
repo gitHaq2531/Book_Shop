@@ -49,7 +49,7 @@ public class MaterBaseClass {
 			if (browser == null) {
 				browser = futils.getDataFromPropertyFile("browser");
 				System.out.println(browser);
-
+ 
 			}
 		}
 		if (browser.equalsIgnoreCase("chrome")) {

@@ -95,24 +95,26 @@ public class WebDriverUtility {
 		select.selectByVisibleText(visibleText);
 	}
 
+	public int getOptionCount(WebElement elemnt) {
+
+		Select select = new Select(elemnt);
+		return select.getOptions().size();
+	}
+
 	public WebElement getFirstSelectedOption(WebElement elemnt) {
 
 		Select select = new Select(elemnt);
 		return select.getFirstSelectedOption();
 	}
-	
+
 	public void hardWait(int x) {
-	  
-	        try {
-	            Thread.sleep(x);
-	        } catch (Exception e) {
-	            System.out.println("Retrying click...");
-	        }
-	    
+
+		try {
+			Thread.sleep(x);
+		} catch (Exception e) {
+			System.out.println("Retrying click...");
+		}
 
 	}
-	
-	
-
 
 }

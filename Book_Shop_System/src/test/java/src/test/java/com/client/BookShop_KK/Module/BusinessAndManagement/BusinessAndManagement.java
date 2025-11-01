@@ -169,7 +169,7 @@ public class BusinessAndManagement extends BaseClass {
 		}
 		softAssert.assertAll();
 	}
-	
+
 	@Test(groups = "system")
 	public void selectBookAndAddToCartAndPlaceOrderTest() {
 		 String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
