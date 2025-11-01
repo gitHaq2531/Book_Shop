@@ -3,59 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest">
-=======
-<<<<<<< HEAD
-      <class name="com.client.BookShop_AK.Module.AcedemicAndProfessional">
-=======
-<<<<<<< HEAD
-      <class name="com.client.BookShop_KK.Module.HomePageModule.HomepageTest">
-=======
-      <class name="com.client.BookShop_AK.Module.EntranceExam">
->>>>>>> refs/remotes/UpStream/master
->>>>>>> refs/remotes/upstream/master
->>>>>>> refs/remotes/origin/master
+      <class name="src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest">
         <methods>
           <include name="afterMethodConfigMethod"/>
           <include name="beforeMethodConfigMethod"/>
           <include name="afterClassConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="executeAcedemicAndProfessional"/>
-=======
-          <include name="veifyCategorylink" invocation-numbers="0 1 2 3"/>
->>>>>>> refs/remotes/upstream/master
->>>>>>> refs/remotes/origin/master
           <include name="beforeSuitConfigMethod"/>
-<<<<<<< HEAD
-          <include name="integrationBetweenChildAndTeensLinkAndProductListingPage"/>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-          <include name="clickOnEntreranceLink"/>
->>>>>>> refs/remotes/UpStream/master
->>>>>>> refs/remotes/upstream/master
->>>>>>> refs/remotes/origin/master
+          <include name="SearchProductSortPriceSelectAddToCartAndPlaceOrderTest"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.client.BookShop_AK.Module.AcedemicAndProfessional -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.client.BookShop_KK.Module.HomePageModule.HomepageTest -->
-=======
-      </class> <!-- com.client.BookShop_AK.Module.EntranceExam -->
->>>>>>> refs/remotes/UpStream/master
->>>>>>> refs/remotes/upstream/master
->>>>>>> refs/remotes/origin/master
+      </class> <!-- src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

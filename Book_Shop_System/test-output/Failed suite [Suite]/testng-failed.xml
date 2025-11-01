@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)(failed)">
+    <classes>
+      <class name="com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest">
+        <methods>
+          <include name="afterMethodConfigMethod"/>
+          <include name="beforeMethodConfigMethod"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="sortPriceSelectAddToCartAndPlaceOrderFromPopularAuthorTest"/>
+        </methods>
+      </class> <!-- com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest -->
+      <class name="src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking">
+        <methods>
+          <include name="afterMethodConfigMethod"/>
+          <include name="beforeMethodConfigMethod"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="selectBookAndAddToCartAndPlaceOrderTest"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="productDetailRemainConstantInCarPageTest"/>
+        </methods>
+      </class> <!-- src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking -->
+      <class name="com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest">
+        <methods>
+          <include name="afterMethodConfigMethod"/>
+          <include name="sortAndSelectBookAndAddToCartAndPlaceOrderTest"/>
+          <include name="beforeMethodConfigMethod"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="selectBookAndAddToCartAndPlaceOrderTest"/>
+          <include name="beforeSuitConfigMethod"/>
+        </methods>
+      </class> <!-- com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
