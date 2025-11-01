@@ -12,14 +12,15 @@ import com.client.BookShopSystem.GenericUtility.JavaUtility;
 public class TopNavigationBarTest extends BaseClass {
 	SoftAssert softAssert = new SoftAssert();
 	JavaUtility ju = new JavaUtility();
-	@Test(groups = "integration")
-	public void searchBarAndProductListingPageTest() {
+	@Test(groups = "integration" )
+	public void searchBarAndProductListingPageTest(){
 		 String value = exlutil.getDataFromExcelSheet("Kaif Khan", 8, 0);
-		 System.out.println(value);
 			hp.getSearchBar().sendKeys(value);
 			hp.getSearchBar().sendKeys(Keys.ENTER);
-			plp.getFirstBook().isDisplayed();
+	        webDrUtil.hardWait(800);
 			WebElement book = plp.getFirstBook();
+			webDrUtil.waitUntilElementToBeClickable(book);
+			book.isDisplayed();
 			int priceAfterDiscount = plp.getPriceAfterDiscount(book);
 			softAssert.assertTrue(priceAfterDiscount > 0);
 			softAssert.assertTrue(plp.getActualPrice().isDisplayed());
@@ -27,12 +28,13 @@ public class TopNavigationBarTest extends BaseClass {
 			softAssert.assertAll();
 	}
 	
-	@Test(groups = "integration")
+	@Test(groups = "integration" ,invocationCount = 1)
 	public void searchBarAndProductDetailPageTest() {
 		 String value = exlutil.getDataFromExcelSheet("Kaif Khan", 9, 0);
 		 System.out.println(value);
 			hp.getSearchBar().sendKeys(value);
 			hp.getSearchBar().sendKeys(Keys.ENTER);
+			webDrUtil.hardWait(800);
 			WebElement book = plp.getFirstBook();
 			String bookNamePLP = plp.getBookName(book);
 			int priceAfterDiscountPLP = plp.getPriceAfterDiscount(book);
@@ -54,6 +56,7 @@ public class TopNavigationBarTest extends BaseClass {
 		 System.out.println(value);
 			hp.getSearchBar().sendKeys(value);
 			hp.getSearchBar().sendKeys(Keys.ENTER);
+			webDrUtil.hardWait(800);
 			plp.getFirstBook().click();
 			WebElement addToCartBtn = pdp.getAddToCartBtn();
 			int priceAfterDiscountPDP = pdp.getPriceAfterDiscount(addToCartBtn);
@@ -76,6 +79,7 @@ public class TopNavigationBarTest extends BaseClass {
 		 System.out.println(value);
 			hp.getSearchBar().sendKeys(value);
 			hp.getSearchBar().sendKeys(Keys.ENTER);
+			webDrUtil.hardWait(800);
 			plp.getFirstBook().isDisplayed();
 			plp.getFirstBook().click();
 			pdp.getAddToCartBtn().click();
@@ -93,7 +97,7 @@ public class TopNavigationBarTest extends BaseClass {
 		 System.out.println(value);
 			hp.getSearchBar().sendKeys(value);
 			hp.getSearchBar().sendKeys(Keys.ENTER);
-			try {Thread.sleep(10);} catch (Exception e) {}
+			webDrUtil.hardWait(800);
 			 plp.getFirstBook().isDisplayed();
 			System.out.println(plp.getFirstBook().getText());
 			int priceAfterDiscount = plp.getPriceAfterDiscount(plp.getFirstBook());
@@ -110,14 +114,37 @@ public class TopNavigationBarTest extends BaseClass {
 		 System.out.println(value);
 			hp.getSearchBar().sendKeys(value);
 			hp.getSearchBar().sendKeys(Keys.ENTER);
+			webDrUtil.hardWait(800);
 			plp.getFirstBook().isDisplayed();
 			plp.getFirstBook().click();
 			pdp.getAddToCartBtn().click();
-//			atc.clickOnPlaceOrder();
-//			webDrUtil.ExplicitWaitUntilAlertIsPresent();
-//			webDrUtil.switcToAlertAccept();
-//			atc.getMoreShoppingbtn().click();
-//			Assert.assertTrue(hp.getBookBirdLogo().isDisplayed());
+			atc.clickOnPlaceOrder();
+			webDrUtil.ExplicitWaitUntilAlertIsPresent();
+			webDrUtil.switcToAlertAccept();
+			atc.getMoreShoppingbtn().click();
+			Assert.assertTrue(hp.getBookBirdLogo().isDisplayed());
+			
+	}	
+	@Test(groups = "system")
+	public void searchBookAndAddToCartTest() {
+		 String value = exlutil.getDataFromExcelSheet("Kaif Khan", 10, 0);
+			hp.getSearchBar().sendKeys(value);
+			hp.getSearchBar().sendKeys(Keys.ENTER);
+			webDrUtil.hardWait(800);
+			plp.getFirstBook().click();
+			WebElement addToCartBtn = pdp.getAddToCartBtn();
+			int priceAfterDiscountPDP = pdp.getPriceAfterDiscount(addToCartBtn);
+			String bookNamePDP = pdp.getbookName().getText();
+			WebElement quantityDropDown = pdp.getQuantityDropDown();
+			String number = String.valueOf(ju.getRandomeNumber(2, 10));
+			webDrUtil.selectByValue(quantityDropDown, number);
+			pdp.getAddToCartBtn().click();
+			String[] productDetailATC = atc.getProductDetailATC(atc.getOrderDetail());
+			softAssert.assertEquals(productDetailATC[0].trim(), bookNamePDP.trim());
+			softAssert.assertEquals(productDetailATC[1], number);
+			softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
+			softAssert.assertAll();
 			
 	}
+	
 }

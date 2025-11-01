@@ -12,6 +12,7 @@ public class BusinessAndManagement extends BaseClass {
 	SoftAssert softAssert = new SoftAssert();
 	JavaUtility ju = new JavaUtility();
 
+//PASS
 	@Test(groups = "integration")
 	public void businessAndManagementLinkAndProductListingPageTest() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
@@ -26,6 +27,7 @@ public class BusinessAndManagement extends BaseClass {
 		Assert.assertTrue(plp.getActualPrice().isDisplayed());
 	}
 
+//PASS
 	@Test(groups = "integration")
 	public void businessAndManagementLinkAndProductDetailPageTest() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
@@ -43,30 +45,31 @@ public class BusinessAndManagement extends BaseClass {
 		softAssert.assertEquals(actualPricePLP, actualPricePDP);
 		softAssert.assertEquals(priceAfterDiscountPLP, priceAfterDiscountPDP);
 		softAssert.assertTrue(bookNamePDP.trim().contains(bookNamePLP.trim()));
+		System.out.println(bookNamePDP.trim() + "============" + bookNamePLP.trim());
 		softAssert.assertAll();
 	}
-
+//PASS
 	@Test(groups = "integration")
-	public void productDetailRemainConstantInCarPageTest() {
+	public void productDetailRemainConstantInCartPageTest() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
 		hp.getSideBarText(value).click();
 		plp.getFirstBook().isDisplayed();
 		plp.getFirstBook().click();
+		WebElement quantityDropDown = pdp.getQuantityDropDown();
+		webDrUtil.selectByIndex(quantityDropDown, ju.getRandomeNumber(2, 10));
+		String number = webDrUtil.getFirstSelectedOption(quantityDropDown).getText();
 		WebElement addToCartBtn = pdp.getAddToCartBtn();
 		int priceAfterDiscountPDP = pdp.getPriceAfterDiscount(addToCartBtn);
 		String bookNamePDP = pdp.getbookName().getText();
-		WebElement quantityDropDown = pdp.getQuantityDropDown();
-		String number = String.valueOf(ju.getRandomeNumber(2, 10));
-		webDrUtil.selectByValue(quantityDropDown, number);
 		pdp.getAddToCartBtn().click();
 		String[] productDetailATC = atc.getProductDetailATC(atc.getOrderDetail());
 		softAssert.assertEquals(productDetailATC[0].trim(), bookNamePDP.trim());
 		softAssert.assertEquals(productDetailATC[1], number);
 		softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
 		softAssert.assertAll();
-
 	}
 
+//PASS
 	@Test(groups = "integration")
 	public void userIsAbleToNavigateBackToHomePage() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
@@ -82,6 +85,7 @@ public class BusinessAndManagement extends BaseClass {
 
 	}
 
+//PASS
 	@Test(groups = "integration")
 	public void verifySortLinkDisdplay() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
@@ -89,7 +93,7 @@ public class BusinessAndManagement extends BaseClass {
 		Assert.assertTrue(plp.getSortDropDown().isDisplayed());
 
 	}
-
+//PASS
 	@Test(groups = "integration")
 	public void verifyPriceSortingLowToHigh() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
@@ -97,18 +101,18 @@ public class BusinessAndManagement extends BaseClass {
 		WebElement sortDropDown = plp.getSortDropDown();
 		webDrUtil.selectByVisibleText(sortDropDown, "Low To High Price ");
 		int basePrice = 0;
+		System.out.println("================");
 		List<WebElement> allBook = plp.getAllBook();
 		for (WebElement oneBook : allBook) {
 			int finalPrice = plp.getPriceAfterDiscount(oneBook);
-			System.out.println("BasePrice = "+basePrice +"  FinalPrice = "+finalPrice);
+			System.out.println("BasePrice = " + basePrice + "  FinalPrice = " + finalPrice);
 			softAssert.assertTrue(finalPrice >= basePrice);
 			basePrice = finalPrice;
-			
 		}
 		softAssert.assertAll();
 
 	}
-
+//PASS
 	@Test(groups = "integration")
 	public void verifyPriceSortingHighToLow() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
@@ -119,7 +123,8 @@ public class BusinessAndManagement extends BaseClass {
 		int basePrice = 0;
 		for (WebElement oneBook : allBook) {
 			int finalPrice = plp.getPriceAfterDiscount(oneBook);
-			if (basePrice == 0)basePrice = finalPrice;
+			if (basePrice == 0)
+				basePrice = finalPrice;
 
 			softAssert.assertTrue(finalPrice <= basePrice);
 			basePrice = finalPrice;
@@ -127,7 +132,7 @@ public class BusinessAndManagement extends BaseClass {
 		softAssert.assertAll();
 
 	}
-	
+//PASS
 	@Test(groups = "integration")
 	public void verifyDiscountSortingLowToHigh() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
@@ -138,15 +143,15 @@ public class BusinessAndManagement extends BaseClass {
 		List<WebElement> allBook = plp.getAllBookDiscount();
 		for (WebElement oneBookDisc : allBook) {
 			int discount = Integer.parseInt(oneBookDisc.getText().trim().replace("%", ""));
-			System.out.println("BasePrice = "+baseDiscount +"  FinalPrice = "+discount);
+			System.out.println("BasePrice = " + baseDiscount + "  FinalPrice = " + discount);
 			softAssert.assertTrue(discount >= baseDiscount);
 			baseDiscount = discount;
-			
+
 		}
 		softAssert.assertAll();
 
 	}
-	
+//PaSS
 	@Test(groups = "integration")
 	public void verifyDiscountSortingHighToLow() {
 		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 6, 0);
@@ -157,8 +162,9 @@ public class BusinessAndManagement extends BaseClass {
 		List<WebElement> allBook = plp.getAllBookDiscount();
 		for (WebElement oneBookDisc : allBook) {
 			int discount = Integer.parseInt(oneBookDisc.getText().trim().replace("%", ""));
-			if (baseDiscount == 0)baseDiscount = discount;
-			System.out.println("baseDiscount = "+baseDiscount +"  discount = "+discount);
+			if (baseDiscount == 0)
+				baseDiscount = discount;
+			System.out.println("baseDiscount = " + baseDiscount + "  discount = " + discount);
 			softAssert.assertTrue(discount <= baseDiscount);
 			baseDiscount = discount;
 		}

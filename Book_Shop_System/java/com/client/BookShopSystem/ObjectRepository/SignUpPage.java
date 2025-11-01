@@ -40,7 +40,14 @@ public class SignUpPage {
 	private WebElement signUpBtn;
 	public WebElement getSignUpBtn() {
 		return signUpBtn;
-		}//button[@value='register']
+		}
+	
+	@FindBy(xpath = "//h4[.='Member Registration Form']/ancestor::div[@class='modal-content']/descendant::button[.='Close']")
+	private WebElement closeBtn;
+	public WebElement getCloseBtn() {
+		return closeBtn;
+		}
+	
 	
 	
 

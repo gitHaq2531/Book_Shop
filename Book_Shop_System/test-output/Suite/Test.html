@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>16/19/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 29 15:30:30 IST 2025</td>
+<td>Started on:</td><td>Sat Nov 01 15:06:59 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>77 seconds (77172 ms)</td>
+<tr><td>Total time:</td><td>113 seconds (113906 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,969 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductListingPageTest()'><b>searchBarAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductListingPageTest(TopNavigationBarTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace157849544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace157849544'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductListingPageTest(TopNavigationBarTest.java:19)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@49438269</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingHighToLow()'><b>verifyDiscountSortingHighToLow</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;Highest To Lowest Discount&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByVisibleText(WebDriverUtility.java:88)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingHighToLow(BusinessAndManagement.java:155)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace936432499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace936432499'><pre>java.lang.NumberFormatException: For input string: &quot;Highest To Lowest Discount&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByVisibleText(WebDriverUtility.java:88)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingHighToLow(BusinessAndManagement.java:155)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductDetailPageTest()'><b>healthAndCookingLinkAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductDetailPageTest(HealthAndCooking.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1809995046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1809995046'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductDetailPageTest(HealthAndCooking.java:46)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>2</td>
-<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4e08711f</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndPlaceOrderTest()'><b>searchBarAndPlaceOrderTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndPlaceOrderTest(TopNavigationBarTest.java:77)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1792113076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1792113076'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndPlaceOrderTest(TopNavigationBarTest.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@49438269</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductDetailPageTest()'><b>businessAndManagementLinkAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductDetailPageTest(BusinessAndManagement.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace171751994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace171751994'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductDetailPageTest(BusinessAndManagement.java:46)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.productDetailRemainConstantInCarPageTest()'><b>productDetailRemainConstantInCarPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td><div><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;h2&quot;
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByValue(WebDriverUtility.java:81)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.productDetailRemainConstantInCarPageTest(BusinessAndManagement.java:60)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1474310983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1474310983'><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;h2&quot;
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByValue(WebDriverUtility.java:81)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.productDetailRemainConstantInCarPageTest(BusinessAndManagement.java:60)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.veifySignUpButton()'><b>veifySignUpButton</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;register_button&quot; class=&quot;btn btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#register&quot;&gt;...&lt;/button&gt; is not clickable at point (1489, 22). Other element would receive the click: &lt;div id=&quot;register&quot; class=&quot;modal fade in&quot; role=&quot;dialog&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=141.0.7390.123)
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e2aac2938f4f521680930434bb7d899, clickElement {id=f.610F78B0BB194E00670DF8C664938CEA.d.49AC875974EF7FBC252E3750C90C3661.e.42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\KAIFKH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e2aac2938f4f521680930434bb7d899)] -&gt; id: register_button]
-Session ID: 9e2aac2938f4f521680930434bb7d899
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.veifySignUpButton(HomePage02Test.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2146473561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2146473561'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;register_button&quot; class=&quot;btn btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#register&quot;&gt;...&lt;/button&gt; is not clickable at point (1489, 22). Other element would receive the click: &lt;div id=&quot;register&quot; class=&quot;modal fade in&quot; role=&quot;dialog&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=141.0.7390.123)
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e2aac2938f4f521680930434bb7d899, clickElement {id=f.610F78B0BB194E00670DF8C664938CEA.d.49AC875974EF7FBC252E3750C90C3661.e.42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\KAIFKH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e2aac2938f4f521680930434bb7d899)] -&gt; id: register_button]
-Session ID: 9e2aac2938f4f521680930434bb7d899
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.veifySignUpButton(HomePage02Test.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@2cdd0d4b</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.verifyUserNamePostAccountCreation()'><b>verifyUserNamePostAccountCreation</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;register_button&quot; class=&quot;btn btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#register&quot;&gt;...&lt;/button&gt; is not clickable at point (1489, 22). Other element would receive the click: &lt;div id=&quot;register&quot; class=&quot;modal fade in&quot; role=&quot;dialog&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=141.0.7390.123)
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e2aac2938f4f521680930434bb7d899, clickElement {id=f.610F78B0BB194E00670DF8C664938CEA.d.49AC875974EF7FBC252E3750C90C3661.e.42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\KAIFKH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e2aac2938f4f521680930434bb7d899)] -&gt; id: register_button]
-Session ID: 9e2aac2938f4f521680930434bb7d899
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.verifyUserNamePostAccountCreation(HomePage02Test.java:47)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace885984896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace885984896'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;register_button&quot; class=&quot;btn btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#register&quot;&gt;...&lt;/button&gt; is not clickable at point (1489, 22). Other element would receive the click: &lt;div id=&quot;register&quot; class=&quot;modal fade in&quot; role=&quot;dialog&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=141.0.7390.123)
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e2aac2938f4f521680930434bb7d899, clickElement {id=f.610F78B0BB194E00670DF8C664938CEA.d.49AC875974EF7FBC252E3750C90C3661.e.42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\KAIFKH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e2aac2938f4f521680930434bb7d899)] -&gt; id: register_button]
-Session ID: 9e2aac2938f4f521680930434bb7d899
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.verifyUserNamePostAccountCreation(HomePage02Test.java:47)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@2cdd0d4b</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.InvalidProductNameAndProductListingPageTest()'><b>InvalidProductNameAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.InvalidProductNameAndProductListingPageTest(TopNavigationBarTest.java:94)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2133359512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2133359512'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.InvalidProductNameAndProductListingPageTest(TopNavigationBarTest.java:94)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@49438269</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.veifyLoginButton()'><b>veifyLoginButton</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;login_button&quot; class=&quot;btn btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#login&quot;&gt;...&lt;/button&gt; is not clickable at point (1404, 22). Other element would receive the click: &lt;div id=&quot;register&quot; class=&quot;modal fade in&quot; role=&quot;dialog&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=141.0.7390.123)
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e2aac2938f4f521680930434bb7d899, clickElement {id=f.610F78B0BB194E00670DF8C664938CEA.d.49AC875974EF7FBC252E3750C90C3661.e.48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\KAIFKH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e2aac2938f4f521680930434bb7d899)] -&gt; id: login_button]
-Session ID: 9e2aac2938f4f521680930434bb7d899
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.veifyLoginButton(HomePage02Test.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793186359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace793186359'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;login_button&quot; class=&quot;btn btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#login&quot;&gt;...&lt;/button&gt; is not clickable at point (1404, 22). Other element would receive the click: &lt;div id=&quot;register&quot; class=&quot;modal fade in&quot; role=&quot;dialog&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=141.0.7390.123)
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e2aac2938f4f521680930434bb7d899, clickElement {id=f.610F78B0BB194E00670DF8C664938CEA.d.49AC875974EF7FBC252E3750C90C3661.e.48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\KAIFKH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e2aac2938f4f521680930434bb7d899)] -&gt; id: login_button]
-Session ID: 9e2aac2938f4f521680930434bb7d899
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.veifyLoginButton(HomePage02Test.java:16)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@2cdd0d4b</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.createAccount()'><b>createAccount</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.createAccount(HomePage02Test.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1636786811", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1636786811'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.createAccount(HomePage02Test.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@2cdd0d4b</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingLowToHigh()'><b>verifyDiscountSortingLowToHigh</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;Low To High Discount &quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByVisibleText(WebDriverUtility.java:88)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingLowToHigh(BusinessAndManagement.java:136)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace107444607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace107444607'><pre>java.lang.NumberFormatException: For input string: &quot;Low To High Discount &quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByVisibleText(WebDriverUtility.java:88)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingLowToHigh(BusinessAndManagement.java:136)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingLowToHigh()'><b>verifyPriceSortingLowToHigh</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;Low To High Price &quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByVisibleText(WebDriverUtility.java:88)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingLowToHigh(BusinessAndManagement.java:98)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1521848908", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1521848908'><pre>java.lang.NumberFormatException: For input string: &quot;Low To High Price &quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByVisibleText(WebDriverUtility.java:88)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingLowToHigh(BusinessAndManagement.java:98)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest.demo()'><b>demo</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest.demo(TopNavigationBarNegativeTest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1193710204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1193710204'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest.demo(TopNavigationBarNegativeTest.java:13)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest@2cd76f31</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndAddToCartTest()'><b>searchBarAndAddToCartTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndAddToCartTest(TopNavigationBarTest.java:111)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace513113647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace513113647'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndAddToCartTest(TopNavigationBarTest.java:111)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@49438269</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingHighToLow()'><b>verifyPriceSortingHighToLow</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;Highest To Lowest Price &quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByVisibleText(WebDriverUtility.java:88)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingHighToLow(BusinessAndManagement.java:117)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1752829504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1752829504'><pre>java.lang.NumberFormatException: For input string: &quot;Highest To Lowest Price &quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByVisibleText(WebDriverUtility.java:88)
-	at src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingHighToLow(BusinessAndManagement.java:117)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.productDetailRemainConstantInCarPageTest()'><b>productDetailRemainConstantInCarPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
-<td><div><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;h2&quot;
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByValue(WebDriverUtility.java:81)
-	at src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.productDetailRemainConstantInCarPageTest(HealthAndCooking.java:60)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace440926517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace440926517'><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;h2&quot;
-Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
-	at com.client.BookShopSystem.GenericUtility.WebDriverUtility.selectByValue(WebDriverUtility.java:81)
-	at src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.productDetailRemainConstantInCarPageTest(HealthAndCooking.java:60)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4e08711f</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndCartPageTest()'><b>searchBarAndCartPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndCartPageTest(TopNavigationBarTest.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1703458581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1703458581'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndCartPageTest(TopNavigationBarTest.java:55)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@49438269</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductDetailPageTest()'><b>searchBarAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductDetailPageTest(TopNavigationBarTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1287658623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1287658623'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductDetailPageTest(TopNavigationBarTest.java:34)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@49438269</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -1039,85 +76,180 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyPopularAuthorDisplayed()'><b>verifyPopularAuthorDisplayed</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Health , Health and Cooking STORE</td>
 <td></td>
 <td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Business, Business and Management STORE</td>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.userNamePostAccountCreationVerificationTest()'><b>userNamePostAccountCreationVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
 <td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
+<td>2</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@3c3d9b6b</td></tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyNavigationToHomePageViaLogo()'><b>verifyNavigationToHomePageViaLogo</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductListingPageTest()'><b>searchBarAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
 <td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
+<td>1</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategoryNames()'><b>veifyCategoryNames</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingHighToLow()'><b>verifyDiscountSortingHighToLow</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
 <td></td>
 <td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Regional , Regional Books STORE</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyBookbirdLogoDisplayed()'><b>verifyBookbirdLogoDisplayed</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductListingPageTest()'><b>healthAndCookingLinkAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
-<td></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4e08711f</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductListingPageTest()'><b>businessAndManagementLinkAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
 <tr>
 <td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifySortLinkDisdplay()'><b>verifySortLinkDisdplay</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
 <td></td>
 <td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Health , Health and Cooking STORE</td>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyBookbirdLogoDisplayed()'><b>verifyBookbirdLogoDisplayed</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
 <td></td>
 <td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyPopularAuthorLink()'><b>verifyPopularAuthorLink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.SignUpButtonVerificationTest()'><b>SignUpButtonVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
 <td></td>
 <td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.userIsAbleToNavigateBackToHomePage()'><b>userIsAbleToNavigateBackToHomePage</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>1</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@1c1bbc4e</td></tr>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@3c3d9b6b</td></tr>
 <tr>
 <td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifySerarchBaarVisiblity()'><b>verifySerarchBaarVisiblity</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
 <td></td>
 <td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.integrationBetweenChildAndTeensLinkAndProductListingPage()'><b>integrationBetweenChildAndTeensLinkAndProductListingPage</b><br>Test class: com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest</td>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.createAccountVerificationTest()'><b>createAccountVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
 <td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@ba2f4ec</td></tr>
+<td>3</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@3c3d9b6b</td></tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Children , Children and Teens STORE</td>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndPlaceOrderTest()'><b>searchBarAndPlaceOrderTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
 <td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
+<td>3</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyPopularAuthorLink()'><b>verifyPopularAuthorLink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.userIsAbleToNavigateBackToHomePage()'><b>userIsAbleToNavigateBackToHomePage</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>1</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingHighToLow()'><b>verifyPriceSortingHighToLow</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>21</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.InvalidProductNameAndProductListingPageTest()'><b>InvalidProductNameAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>2</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest.navigateToProductListingWithoutLogin()'><b>navigateToProductListingWithoutLogin</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest</td>
+<td></td>
+<td>5</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest@609cd4d8</td></tr>
 <tr>
 <td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifySerarchBaarWithValidBookName()'><b>verifySerarchBaarWithValidBookName</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
 <td></td>
 <td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@367ffa75</td></tr>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingLowToHigh()'><b>verifyPriceSortingLowToHigh</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>21</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingLowToHigh()'><b>verifyDiscountSortingLowToHigh</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>20</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductListingPageTest()'><b>businessAndManagementLinkAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>0</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductDetailPageTest()'><b>healthAndCookingLinkAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
+<td></td>
+<td>2</td>
+<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4988d8b8</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.LoginButtonVerificationTest()'><b>LoginButtonVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@3c3d9b6b</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Children , Children and Teens STORE</td>
+<td></td>
+<td>3</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductListingPageTest()'><b>healthAndCookingLinkAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
+<td></td>
+<td>1</td>
+<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4988d8b8</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyNavigationToHomePageViaLogo()'><b>verifyNavigationToHomePageViaLogo</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductDetailPageTest()'><b>searchBarAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>1</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Regional , Regional Books STORE</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductDetailPageTest()'><b>businessAndManagementLinkAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>3</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndAddToCartTest()'><b>searchBarAndAddToCartTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>6</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.productDetailRemainConstantInCarPageTest()'><b>productDetailRemainConstantInCarPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
+<td></td>
+<td>4</td>
+<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4988d8b8</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.productDetailRemainConstantInCartPageTest()'><b>productDetailRemainConstantInCartPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>2</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.integrationBetweenChildAndTeensLinkAndProductListingPage()'><b>integrationBetweenChildAndTeensLinkAndProductListingPage</b><br>Test class: com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@13b6aecc</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndCartPageTest()'><b>searchBarAndCartPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>3</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyPopularAuthorDisplayed()'><b>verifyPopularAuthorDisplayed</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Business, Business and Management STORE</td>
+<td></td>
+<td>0</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategoryNames()'><b>veifyCategoryNames</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
 </table><p>
 </body>
 </html>

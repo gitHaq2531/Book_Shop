@@ -55,7 +55,6 @@ public class HomePage {
 	public WebElement getSearchBar() {
 		return searchBar;
 	}
-
 	@FindBy(xpath = "//button[@id='login_button' or .='Login']")
 	private WebElement loginButton;
 	public WebElement getLoginButton() {

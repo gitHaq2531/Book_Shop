@@ -37,11 +37,11 @@ public WebElement getAddToCartBtn() {
 private WebElement bookName;
 public WebElement getbookName() {
 	return bookName;
-}
+} 
 @FindBy(id = "quantity")
 private WebElement quantityDropDown;
 public WebElement getQuantityDropDown() {
-	return bookName;
+	return quantityDropDown;
 }
 
 
@@ -49,7 +49,6 @@ public int getPriceAfterDiscount(WebElement element) {
 	String number = element.getText().substring(18, 22).trim();
 	return Integer.parseInt(number);
 }
-
 
 
 

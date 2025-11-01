@@ -2,42 +2,50 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-29T16:56:30 IST" name="Default suite" finished-at="2025-10-29T16:56:33 IST" duration-ms="3070">
+  <suite started-at="2025-11-01T17:06:00 IST" name="Default suite" finished-at="2025-11-01T17:06:06 IST" duration-ms="5761">
     <groups>
-      <group name="Smoke">
-        <method signature="HomePage02Test.veifyLoginButton()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@6200f9cb]" name="veifyLoginButton" class="com.client.BookShop_KK.Module.HomePageModule.HomePage02Test"/>
-      </group> <!-- Smoke -->
+      <group name="system">
+        <method signature="ChildrenAndTeensTest.selectBookAndAddToCartTest()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@4009e306]" name="selectBookAndAddToCartTest" class="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest"/>
+      </group> <!-- system -->
     </groups>
-    <test started-at="2025-10-29T16:56:30 IST" name="Default test" finished-at="2025-10-29T16:56:33 IST" duration-ms="3070">
-      <class name="com.client.BookShop_KK.Module.HomePageModule.HomePage02Test">
-        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@6200f9cb]" started-at="2025-10-29T16:56:30 IST" name="beforeSuitConfigMethod" finished-at="2025-10-29T16:56:30 IST" duration-ms="9" status="PASS">
+    <test started-at="2025-11-01T17:06:00 IST" name="Default test" finished-at="2025-11-01T17:06:06 IST" duration-ms="5761">
+      <class name="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@4009e306]" started-at="2025-11-01T17:06:00 IST" name="beforeSuitConfigMethod" finished-at="2025-11-01T17:06:00 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
-        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@6200f9cb]" started-at="2025-10-29T16:56:30 IST" name="beforeClassConfigMethod" finished-at="2025-10-29T16:56:33 IST" duration-ms="2338" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@4009e306]" started-at="2025-11-01T17:06:00 IST" name="beforeClassConfigMethod" finished-at="2025-11-01T17:06:02 IST" duration-ms="2366" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@e87ebcdc]]>
+                <![CDATA[org.testng.xml.XmlTest@fecfce70]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
-        <test-method signature="veifyLoginButton()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@6200f9cb]" started-at="2025-10-29T16:56:33 IST" name="veifyLoginButton" finished-at="2025-10-29T16:56:33 IST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="beforeMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@4009e306]" started-at="2025-11-01T17:06:02 IST" name="beforeMethodConfigMethod" finished-at="2025-11-01T17:06:04 IST" duration-ms="1828" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- veifyLoginButton -->
-        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@6200f9cb]" started-at="2025-10-29T16:56:33 IST" name="afterClassConfigMethod" finished-at="2025-10-29T16:56:33 IST" duration-ms="360" status="PASS">
+        </test-method> <!-- beforeMethodConfigMethod -->
+        <test-method signature="selectBookAndAddToCartTest()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@4009e306]" started-at="2025-11-01T17:06:04 IST" name="selectBookAndAddToCartTest" finished-at="2025-11-01T17:06:05 IST" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBookAndAddToCartTest -->
+        <test-method is-config="true" signature="afterMethodConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@4009e306]" started-at="2025-11-01T17:06:05 IST" name="afterMethodConfigMethod" finished-at="2025-11-01T17:06:05 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfigMethod -->
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@4009e306]" started-at="2025-11-01T17:06:05 IST" name="afterClassConfigMethod" finished-at="2025-11-01T17:06:06 IST" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
-        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@6200f9cb]" started-at="2025-10-29T16:56:33 IST" name="afterSuiteConfigMethod" finished-at="2025-10-29T16:56:33 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@4009e306]" started-at="2025-11-01T17:06:06 IST" name="afterSuiteConfigMethod" finished-at="2025-11-01T17:06:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
-      </class> <!-- com.client.BookShop_KK.Module.HomePageModule.HomePage02Test -->
+      </class> <!-- com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

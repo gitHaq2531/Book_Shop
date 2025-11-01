@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.client.BookShop_KK.Module.HomePageModule.HomePage02Test">
+      <class name="src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest">
         <methods>
+          <include name="demo"/>
           <include name="afterClassConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
           <include name="beforeSuitConfigMethod"/>
-          <include name="veifySignUpButton"/>
         </methods>
-      </class> <!-- com.client.BookShop_KK.Module.HomePageModule.HomePage02Test -->
+      </class> <!-- src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@ package com.client.BookShopSystem.GenericUtility;
 
 import java.time.Duration;
 
+import org.dataloader.Try;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -54,6 +55,11 @@ public class WebDriverUtility {
 
 	}
 
+	public void waitUntilInvisibilityOf(WebElement element) {
+		expWait.until(ExpectedConditions.invisibilityOf(element));
+
+	}
+
 //	Mouse action from Action class
 	public void scrollToElement(WebElement element) {
 		Actions act = new Actions(driver);
@@ -77,15 +83,36 @@ public class WebDriverUtility {
 
 	}
 
-	public void selectByValue(WebElement elemnt, String index) {
+	public void selectByValue(WebElement elemnt, String value) {
 		Select select = new Select(elemnt);
-		select.selectByIndex(Integer.parseInt(index));
+		select.selectByValue(value);
 
 	}
+
 	public void selectByVisibleText(WebElement elemnt, String visibleText) {
-	
+
 		Select select = new Select(elemnt);
-		select.selectByIndex(Integer.parseInt(visibleText));
+		select.selectByVisibleText(visibleText);
 	}
+
+	public WebElement getFirstSelectedOption(WebElement elemnt) {
+
+		Select select = new Select(elemnt);
+		return select.getFirstSelectedOption();
+	}
+	
+	public void hardWait(int x) {
+	  
+	        try {
+	            Thread.sleep(x);
+	        } catch (Exception e) {
+	            System.out.println("Retrying click...");
+	        }
+	    
+
+	}
+	
+	
+
 
 }

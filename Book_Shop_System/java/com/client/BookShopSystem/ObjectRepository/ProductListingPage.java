@@ -24,8 +24,8 @@ public class ProductListingPage {
 	public WebElement getRandomeBook() {
 		return randomeBook;
 	}
-
-	@FindBy(xpath = "//div[@class='book-block']")
+	
+	@FindBy(xpath = "//div[@class='book-block'][1]")
 	private WebElement firstBook;
 	public WebElement getFirstBook() {
 		return firstBook;
@@ -67,31 +67,26 @@ public class ProductListingPage {
 		return Integer.parseInt(number);
 	}
 
-	public String getBookName2(WebElement element) {
-		String text = element.getText();
-		String name = "";
-		for (int i = 0; i < text.length(); i++) {
-			String charAt = String.valueOf(text.charAt(i));
-			String number = "1234567890";
-			if (!number.contains(charAt)) {
-				name += charAt;
-			} else {
-				break;
-			}
-
-		}
-		return name;
-	}
+//	public String getBookName2(WebElement element) {
+//		String text = element.getText();
+//		String name = "";
+//		for (int i = 0; i < text.length(); i++) {
+//			String charAt = String.valueOf(text.charAt(i));
+//			String number = "1234567890";
+//			if (!number.contains(charAt)) {
+//				name += charAt;
+//			} else {
+//				break;
+//			}
+//
+//		}
+//		return name;
+//	}
 	
 	public String getBookName(WebElement element) {
-		String name = "365 Wonders Of The World 284   450 37%";
-		int totalCh = name.length(); 
-		name.substring(0, totalCh-13);
+		String text = element.getText();
+		int totalCh = text.length(); 
+		String name = text.substring(0, totalCh-13);
 		return name;
 	}
-public static void main(String[] args) {
-	String name = "365 Wonders Of The World 284   450 37%";
-	int totalCh = name.length(); 
-	String str = name.substring(0, totalCh-13);
-	System.out.println(str);
-}}
+}
