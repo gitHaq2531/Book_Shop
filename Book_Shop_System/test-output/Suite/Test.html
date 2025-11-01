@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>50/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 01 15:06:59 IST 2025</td>
+<td>Started on:</td><td>Sun Nov 02 02:18:19 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>113 seconds (113906 ms)</td>
+<tr><td>Total time:</td><td>149 seconds (149189 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,132 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.selectBookAndAddToCartAndPlaceOrderTest()'><b>selectBookAndAddToCartAndPlaceOrderTest</b><br>Test class: com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Madhusala] but found [365 Bedtime Stories],
+	expected [3] but found [2],
+	expected [true] but found [false]
+	at com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.selectBookAndAddToCartAndPlaceOrderTest(RegionalBooksTest.java:65)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1277734862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1277734862'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Madhusala] but found [365 Bedtime Stories],
+	expected [3] but found [2],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.selectBookAndAddToCartAndPlaceOrderTest(RegionalBooksTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>4</td>
+<td>com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest@394df057</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.selectBookAndAddToCartTest()'><b>selectBookAndAddToCartTest</b><br>Test class: com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Madhusala] but found [365 Bedtime Stories],
+	expected [3] but found [2],
+	expected [true] but found [false]
+	at com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.selectBookAndAddToCartTest(RegionalBooksTest.java:45)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace619857195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace619857195'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Madhusala] but found [365 Bedtime Stories],
+	expected [3] but found [2],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.selectBookAndAddToCartTest(RegionalBooksTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest@394df057</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.sortAndSelectBookAndAddToCartAndPlaceOrderTest()'><b>sortAndSelectBookAndAddToCartAndPlaceOrderTest</b><br>Test class: com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Madhusala] but found [365 Bedtime Stories],
+	expected [3] but found [2],
+	expected [true] but found [false]
+	at com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.sortAndSelectBookAndAddToCartAndPlaceOrderTest(RegionalBooksTest.java:107)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace588650136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace588650136'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Madhusala] but found [365 Bedtime Stories],
+	expected [3] but found [2],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.sortAndSelectBookAndAddToCartAndPlaceOrderTest(RegionalBooksTest.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>7</td>
+<td>com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest@394df057</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,180 +202,255 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Health , Health and Cooking STORE</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.userNamePostAccountCreationVerificationTest()'><b>userNamePostAccountCreationVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
-<td></td>
-<td>2</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@3c3d9b6b</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductListingPageTest()'><b>searchBarAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td></td>
-<td>1</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingHighToLow()'><b>verifyDiscountSortingHighToLow</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifySortLinkDisdplay()'><b>verifySortLinkDisdplay</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyBookbirdLogoDisplayed()'><b>verifyBookbirdLogoDisplayed</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.SignUpButtonVerificationTest()'><b>SignUpButtonVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
-<td></td>
-<td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@3c3d9b6b</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifySerarchBaarVisiblity()'><b>verifySerarchBaarVisiblity</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.createAccountVerificationTest()'><b>createAccountVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
-<td></td>
-<td>3</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@3c3d9b6b</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndPlaceOrderTest()'><b>searchBarAndPlaceOrderTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td></td>
-<td>3</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyPopularAuthorLink()'><b>verifyPopularAuthorLink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
-<td></td>
-<td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.userIsAbleToNavigateBackToHomePage()'><b>userIsAbleToNavigateBackToHomePage</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>1</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingHighToLow()'><b>verifyPriceSortingHighToLow</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>21</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.InvalidProductNameAndProductListingPageTest()'><b>InvalidProductNameAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td></td>
-<td>2</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest.navigateToProductListingWithoutLogin()'><b>navigateToProductListingWithoutLogin</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest</td>
-<td></td>
-<td>5</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest@609cd4d8</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifySerarchBaarWithValidBookName()'><b>verifySerarchBaarWithValidBookName</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingLowToHigh()'><b>verifyPriceSortingLowToHigh</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>21</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingLowToHigh()'><b>verifyDiscountSortingLowToHigh</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>20</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductListingPageTest()'><b>businessAndManagementLinkAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>0</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductDetailPageTest()'><b>healthAndCookingLinkAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
-<td></td>
-<td>2</td>
-<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4988d8b8</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.LoginButtonVerificationTest()'><b>LoginButtonVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
-<td></td>
-<td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@3c3d9b6b</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Children , Children and Teens STORE</td>
-<td></td>
-<td>3</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductListingPageTest()'><b>healthAndCookingLinkAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
-<td></td>
-<td>1</td>
-<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4988d8b8</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyNavigationToHomePageViaLogo()'><b>verifyNavigationToHomePageViaLogo</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductDetailPageTest()'><b>searchBarAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td></td>
-<td>1</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Regional , Regional Books STORE</td>
-<td></td>
-<td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductDetailPageTest()'><b>businessAndManagementLinkAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
-<td></td>
-<td>3</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndAddToCartTest()'><b>searchBarAndAddToCartTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
-<td></td>
-<td>6</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
-<tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.productDetailRemainConstantInCarPageTest()'><b>productDetailRemainConstantInCarPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.sortDiscountSelectAddToCartAndPlaceOrderFromPopularAuthorTest()'><b>sortDiscountSelectAddToCartAndPlaceOrderFromPopularAuthorTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest</td>
 <td></td>
 <td>4</td>
-<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@4988d8b8</td></tr>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
 <tr>
-<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.productDetailRemainConstantInCartPageTest()'><b>productDetailRemainConstantInCartPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylinkTest()'><b>veifyCategorylinkTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Children , Children and Teens STORE</td>
 <td></td>
-<td>2</td>
-<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@158a8276</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.integrationBetweenChildAndTeensLinkAndProductListingPage()'><b>integrationBetweenChildAndTeensLinkAndProductListingPage</b><br>Test class: com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest</td>
-<td></td>
-<td>1</td>
-<td>com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@13b6aecc</td></tr>
+<td>0</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
 <tr>
 <td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndCartPageTest()'><b>searchBarAndCartPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
 <td></td>
 <td>3</td>
-<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@7d8704ef</td></tr>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@65d09a04</td></tr>
 <tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyPopularAuthorDisplayed()'><b>verifyPopularAuthorDisplayed</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylink()'><b>veifyCategorylink</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Business, Business and Management STORE</td>
-<td></td>
-<td>0</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
-<tr>
-<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategoryNames()'><b>veifyCategoryNames</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductListingPageTest()'><b>searchBarAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
 <td></td>
 <td>1</td>
-<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@17f7cd29</td></tr>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@65d09a04</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.navigateToPopularAuthorSelectBookAndPlaceOrderTestTest()'><b>navigateToPopularAuthorSelectBookAndPlaceOrderTestTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest<br>Parameters: Ravinder, RAVINDER SINGH STORE</td>
+<td></td>
+<td>8</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndProductDetailPageTest()'><b>searchBarAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>2</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@65d09a04</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.SignUpButtonVerificationTest()'><b>SignUpButtonVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
+<td></td>
+<td>2</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@58a9760d</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBookAndAddToCartTest()'><b>searchBookAndAddToCartTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>2</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@65d09a04</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.selectBookAndAddToCartTest()'><b>selectBookAndAddToCartTest</b><br>Test class: com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest</td>
+<td></td>
+<td>5</td>
+<td>com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@158a8276</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductListingPageTest()'><b>businessAndManagementLinkAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>1</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.InvalidProductNameAndProductListingPageTest()'><b>InvalidProductNameAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>3</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@65d09a04</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.productDetailRemainConstantInCarPageTest()'><b>productDetailRemainConstantInCarPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
+<td></td>
+<td>7</td>
+<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@5aebe890</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.verifyBannerLinkLinkTest()'><b>verifyBannerLinkLinkTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.sortAndSelectBookAndAddToCartAndPlaceOrderTest()'><b>sortAndSelectBookAndAddToCartAndPlaceOrderTest</b><br>Test class: com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest</td>
+<td></td>
+<td>29</td>
+<td>com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@158a8276</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.navigateToPopularAuthorSelectBookAndPlaceOrderTestTest()'><b>navigateToPopularAuthorSelectBookAndPlaceOrderTestTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest<br>Parameters: Durjoy, DURJOY DATTA STORE</td>
+<td></td>
+<td>8</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.navigateToPopularAuthorSelectBookAndPlaceOrderTestTest()'><b>navigateToPopularAuthorSelectBookAndPlaceOrderTestTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest<br>Parameters: Subrata, SUBRATA ROY STORE</td>
+<td></td>
+<td>9</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.productDetailRemainConstantInCartPageTest()'><b>productDetailRemainConstantInCartPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>5</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifySortLinkDisdplay()'><b>verifySortLinkDisdplay</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>0</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.sortPriceSelectAddToCartAndPlaceOrderFromPopularAuthorTest()'><b>sortPriceSelectAddToCartAndPlaceOrderFromPopularAuthorTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest</td>
+<td></td>
+<td>4</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylinkTest()'><b>veifyCategorylinkTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Health , Health and Cooking STORE</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.navigateToPopularAuthorSelectBookAddToCartTest()'><b>navigateToPopularAuthorSelectBookAddToCartTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest</td>
+<td></td>
+<td>9</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductListingPageTest()'><b>healthAndCookingLinkAndProductListingPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
+<td></td>
+<td>1</td>
+<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@5aebe890</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingLowToHigh()'><b>verifyDiscountSortingLowToHigh</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>21</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingHighToLow()'><b>verifyPriceSortingHighToLow</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>22</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.integrationBetweenChildAndTeensLinkAndProductListingPage()'><b>integrationBetweenChildAndTeensLinkAndProductListingPage</b><br>Test class: com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest</td>
+<td></td>
+<td>2</td>
+<td>com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@158a8276</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest.integrationBetweenChildAndTeensLinkAndProductListingPage()'><b>integrationBetweenChildAndTeensLinkAndProductListingPage</b><br>Test class: com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest</td>
+<td></td>
+<td>4</td>
+<td>com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest@394df057</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylinkTest()'><b>veifyCategorylinkTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Regional , Regional Books STORE</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.businessAndManagementLinkAndProductDetailPageTest()'><b>businessAndManagementLinkAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>2</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.userIsAbleToNavigateBackToHomePage()'><b>userIsAbleToNavigateBackToHomePage</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>4</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.selectBookAndAddToCartAndPlaceOrderTest()'><b>selectBookAndAddToCartAndPlaceOrderTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>5</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyBookbirdLogoDisplayedTest()'><b>verifyBookbirdLogoDisplayedTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.navigateToPopularAuthorSelectBookAndPlaceOrderTestTest()'><b>navigateToPopularAuthorSelectBookAndPlaceOrderTestTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest<br>Parameters: Rowling, J K ROWLING STORE</td>
+<td></td>
+<td>8</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifySerarchBaarWithValidBookNameTest()'><b>verifySerarchBaarWithValidBookNameTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.healthAndCookingLinkAndProductDetailPageTest()'><b>healthAndCookingLinkAndProductDetailPageTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
+<td></td>
+<td>3</td>
+<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@5aebe890</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyDiscountSortingHighToLow()'><b>verifyDiscountSortingHighToLow</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>1</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.verifyPopularAuthorDisplayedTestTest()'><b>verifyPopularAuthorDisplayedTestTest</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest</td>
+<td></td>
+<td>0</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest.navigateToProductListingWithoutLogin()'><b>navigateToProductListingWithoutLogin</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest</td>
+<td></td>
+<td>1</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest@33c911a1</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest.selectBookAndAddToCartAndPlaceOrderTest()'><b>selectBookAndAddToCartAndPlaceOrderTest</b><br>Test class: com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest</td>
+<td></td>
+<td>6</td>
+<td>com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest@158a8276</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndAddToCartTest()'><b>searchBarAndAddToCartTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>4</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@65d09a04</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking.selectBookAndAddToCartAndPlaceOrderTest()'><b>selectBookAndAddToCartAndPlaceOrderTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking</td>
+<td></td>
+<td>3</td>
+<td>src.test.java.com.client.BookShop_KK.Module.HealthAndCooking.HealthAndCooking@5aebe890</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategoryNamesTest()'><b>veifyCategoryNamesTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>4</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.LoginButtonVerificationTest()'><b>LoginButtonVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
+<td></td>
+<td>7</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@58a9760d</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifySerarchBaarVisiblityTest()'><b>verifySerarchBaarVisiblityTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.veifyCategorylinkTest()'><b>veifyCategorylinkTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest<br>Parameters: Business, Business and Management STORE</td>
+<td></td>
+<td>0</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest.searchBarAndPlaceOrderTest()'><b>searchBarAndPlaceOrderTest</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest</td>
+<td></td>
+<td>3</td>
+<td>src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarTest@65d09a04</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.userNamePostAccountCreationVerificationTest()'><b>userNamePostAccountCreationVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
+<td></td>
+<td>6</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@58a9760d</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomepageTest.verifyNavigationToHomePageViaLogo()'><b>verifyNavigationToHomePageViaLogo</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomepageTest@7530ad9c</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.HomePageModule.HomePage02Test.createAccountVerificationTest()'><b>createAccountVerificationTest</b><br>Test class: com.client.BookShop_KK.Module.HomePageModule.HomePage02Test</td>
+<td></td>
+<td>4</td>
+<td>com.client.BookShop_KK.Module.HomePageModule.HomePage02Test@58a9760d</td></tr>
+<tr>
+<td title='com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest.verifyPopularAuthorLink()'><b>verifyPopularAuthorLink</b><br>Test class: com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest</td>
+<td></td>
+<td>1</td>
+<td>com.client.BookShop_KK.Module.PopularAuthors.PopularAuthorsTest@71e9ddb4</td></tr>
+<tr>
+<td title='src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement.verifyPriceSortingLowToHigh()'><b>verifyPriceSortingLowToHigh</b><br>Test class: src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement</td>
+<td></td>
+<td>21</td>
+<td>src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement@4961f6af</td></tr>
 </table><p>
 </body>
 </html>

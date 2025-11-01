@@ -65,6 +65,7 @@ public class HealthAndCooking extends BaseClass {
 		softAssert.assertEquals(productDetailATC[1], number);
 		softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
 		softAssert.assertAll();
+		atc.clearCart();
 
 	}
 	

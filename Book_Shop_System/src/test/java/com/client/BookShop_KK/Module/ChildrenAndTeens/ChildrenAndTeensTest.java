@@ -41,6 +41,7 @@ public class ChildrenAndTeensTest extends BaseClass {
 			softAssert.assertEquals(productDetailATC[1], number);
 			softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
 			softAssert.assertAll();
+			atc.clearCart();
 	}
 	@Test(groups = "system")
 	public void selectBookAndAddToCartAndPlaceOrderTest() {

@@ -20,7 +20,8 @@ public class RegionalBooksTest extends BaseClass {
 		Assert.assertEquals(plp.getHeading().isDisplayed(), true);
 		 plp.getFirstBook().isDisplayed();
 		WebElement book = plp.getFirstBook();
-		int priceAfterDiscount =Integer.parseInt( book.getText().substring(book.getText().length() - 13,book.getText().length() - 10));
+		int priceAfterDiscount = plp.getPriceAfterDiscount(book);
+//		int priceAfterDiscount2 =Integer.parseInt( book.getText().substring(book.getText().length() - 13,book.getText().length() - 10));
 		Assert.assertTrue(priceAfterDiscount>0);
 		plp.getActualPrice().isDisplayed();
 	}
@@ -42,6 +43,7 @@ public class RegionalBooksTest extends BaseClass {
 			softAssert.assertEquals(productDetailATC[1], number);
 			softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
 			softAssert.assertAll();
+			atc.clearCart();
 	}
 	@Test(groups = "system")
 	public void selectBookAndAddToCartAndPlaceOrderTest() {

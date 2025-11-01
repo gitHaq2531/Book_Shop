@@ -48,12 +48,23 @@ public class ProductListingPage {
 		return heading;
 	}
 	
-	@FindBy(id = "select")
+	@FindBy(xpath = "//select[@name='sort']")
 	private WebElement sortDropDown;
 	public WebElement getSortDropDown() {
 		return sortDropDown;
-		
 	}
+	@FindBy(xpath = "//select[@name='sort']/option[@value='priceh']")
+	private WebElement priceHtoL;
+	public WebElement getPriceHtoLOption() {
+		return priceHtoL;
+	}
+	@FindBy(xpath = "//select[@name='sort']/option[@value='discountl']")
+	private WebElement discountLtoH;
+	public WebElement getDiscountLtoHOption() {
+		return discountLtoH;
+	}
+	
+	
 
 	@FindBy(xpath = "//span[contains(@style,'line-through')]")
 	private WebElement actualPrice;

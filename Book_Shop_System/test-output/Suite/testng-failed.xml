@@ -3,21 +3,19 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement">
+      <class name="com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest">
         <methods>
           <include name="afterMethodConfigMethod"/>
+          <include name="sortAndSelectBookAndAddToCartAndPlaceOrderTest"/>
           <include name="beforeMethodConfigMethod"/>
+          <include name="selectBookAndAddToCartTest"/>
           <include name="afterClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
-          <include name="verifyPriceSortingLowToHigh"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="selectBookAndAddToCartAndPlaceOrderTest"/>
           <include name="beforeSuitConfigMethod"/>
-          <include name="productDetailRemainConstantInCartPageTest"/>
-          <include name="verifyDiscountSortingLowToHigh"/>
-          <include name="verifyDiscountSortingHighToLow"/>
-          <include name="verifyPriceSortingHighToLow"/>
         </methods>
-      </class> <!-- src.test.java.com.client.BookShop_KK.Module.BusinessAndManagement.BusinessAndManagement -->
+      </class> <!-- com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
