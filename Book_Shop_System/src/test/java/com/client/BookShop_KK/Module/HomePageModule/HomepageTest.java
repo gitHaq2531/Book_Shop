@@ -1,16 +1,22 @@
 package com.client.BookShop_KK.Module.HomePageModule;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 import com.client.BookShopSystem.BaseUtility.BaseClass;
+import com.client.BookShopSystem.GenericUtility.JavaUtility;
 
 public class HomepageTest extends BaseClass {
+	SoftAssert softAssert = new SoftAssert();
+	JavaUtility ju = new JavaUtility();
+	
 	@Test(groups = "Smoke")
-	public void verifyBookbirdLogoDisplayed() {
+	public void verifyBookbirdLogoDisplayedTest() {
 		Assert.assertEquals(hp.getBookBirdLogo().isEnabled(), true);
-	}
-
+	} 
 	@Test(groups = "Smoke")
 	public void verifyNavigationToHomePageViaLogo() {
 		String expected = exlutil.getDataFromExcelSheet("Kaif Khan", 1, 0);
@@ -24,13 +30,13 @@ public class HomepageTest extends BaseClass {
 	}
 
 	@Test(groups = "Smoke")
-	public void verifySerarchBaarVisiblity() {
+	public void verifySerarchBaarVisiblityTest() {
 		Assert.assertEquals(hp.getSearchBar().isDisplayed(), true);
 
 	}
 
 	@Test(groups = "Smoke")
-	public void verifySerarchBaarWithValidBookName() {
+	public void verifySerarchBaarWithValidBookNameTest() {
 		String expected = exlutil.getDataFromExcelSheet("Kaif Khan", 2, 0);
 		Assert.assertEquals(hp.getSearchBar().isDisplayed(), true);
 		hp.getSearchBar().sendKeys(expected);
@@ -39,7 +45,7 @@ public class HomepageTest extends BaseClass {
 	}
 
 	@Test(groups = "Smoke")
-	public void veifyCategoryNames() {
+	public void veifyCategoryNamesTest() {
 		// Loop through rows and fetch data
 		for (int i = 4; i < 8; i++) {
 			String name = exlutil.getDataFromExcelSheet("Kaif Khan", i, 0);
@@ -51,7 +57,7 @@ public class HomepageTest extends BaseClass {
 
 	@Test(groups = "Smoke", dataProvider = "categoryNamesData")
 
-	public void veifyCategorylink(String name, String n) {
+	public void veifyCategorylinkTest(String name, String n) {
 		hp.getSideBarText(name).click();
 		String text = plp.getHeading().getText();
 		Assert.assertEquals(text.toLowerCase(), n.toLowerCase());
@@ -60,7 +66,7 @@ public class HomepageTest extends BaseClass {
 	}
 	
 	@Test(groups = "Smoke")
-	public void verifyPopularAuthorDisplayed() {
+	public void verifyPopularAuthorDisplayedTestTest() {
 		Assert.assertEquals(hp.getPopularAuthorText().isDisplayed(), true);
 	}
 	@Test(groups = "Smoke")
@@ -71,7 +77,8 @@ public class HomepageTest extends BaseClass {
 		String text = plp.getHeading().getText();
 		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
 	}
-	public void verifyBannerLinkLink() {
+	@Test(groups = "Smoke")
+	public void verifyBannerLinkLinkTest() {
 		
 		webDrUtil.scrollToElement(hp.getPopularAuthorText());
 		hp.getauthorDurjoy().click();
@@ -94,5 +101,28 @@ public class HomepageTest extends BaseClass {
 	        data[i][0] = value;   
 	    } 
 	    return data;
+	    }
+	
+	@Test(groups = "system")
+	public void navigateToPopularAuthorSelectBookAddToCartTest() {
+		
+		webDrUtil.scrollToElement(hp.getPopularAuthorText());
+		hp.getauthorDurjoy().click();
+		String text = plp.getHeading().getText();
+		Assert.assertEquals(text.toLowerCase().contains("durjoy"), true);
+		plp.getFirstBook().click();
+		WebElement addToCartBtn = pdp.getAddToCartBtn();
+		int priceAfterDiscountPDP = pdp.getPriceAfterDiscount(addToCartBtn);
+		String bookNamePDP = pdp.getbookName().getText();
+		WebElement quantityDropDown = pdp.getQuantityDropDown();
+		String number = String.valueOf(ju.getRandomeNumber(2, 10));
+		webDrUtil.selectByValue(quantityDropDown, number);
+		pdp.getAddToCartBtn().click();
+		String[] productDetailATC = atc.getProductDetailATC(atc.getOrderDetail());
+		softAssert.assertEquals(productDetailATC[0].trim(), bookNamePDP.trim());
+		softAssert.assertEquals(productDetailATC[1], number);
+		softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
+		softAssert.assertAll();
 	}
+	
 }

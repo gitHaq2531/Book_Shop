@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest">
+      <class name="com.client.BookShop_KK.Module.HomePageModule.HomepageTest">
         <methods>
-          <include name="demo"/>
+          <include name="afterMethodConfigMethod"/>
+          <include name="beforeMethodConfigMethod"/>
           <include name="afterClassConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
+          <include name="navigateToPopularAuthorSelectBookAddToCartTest"/>
           <include name="beforeSuitConfigMethod"/>
         </methods>
-      </class> <!-- src.test.java.com.client.BookShop_KK.Module.TopNavigationBar.TopNavigationBarNegativeTest -->
+      </class> <!-- com.client.BookShop_KK.Module.HomePageModule.HomepageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

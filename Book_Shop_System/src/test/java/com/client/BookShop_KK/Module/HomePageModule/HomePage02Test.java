@@ -8,8 +8,7 @@ import com.client.BookShopSystem.GenericUtility.JavaUtility;
 
 public class HomePage02Test extends MaterBaseClass {
 	JavaUtility ju = new JavaUtility();
-
-	@Test(groups = "Smoke")
+	@Test(groups = { "Smoke","negative"})
 	public void LoginButtonVerificationTest() {
 
 		WebElement loginButton = hp.getLoginButton();
@@ -19,7 +18,7 @@ public class HomePage02Test extends MaterBaseClass {
 		lp.getCloseBtn().click();
 	}
 
-	@Test(groups = "Smoke")
+	@Test(groups = { "Smoke","negative"})
 	public void SignUpButtonVerificationTest() {
 		lp.getSignUPButton().click();
 		webDrUtil.waitUntilElementToBeClickable(lp.getSignUPPageText());
@@ -27,7 +26,7 @@ public class HomePage02Test extends MaterBaseClass {
 		sp.getCloseBtn().click();
 	}
 
-	@Test(groups = "integration")
+	@Test(groups = { "Smoke","negative"})
 	public void createAccountVerificationTest() {
 		webDrUtil.waitUntilInvisibilityOf(sp.getCloseBtn());
 		lp.getSignUPButton().click();
@@ -45,7 +44,7 @@ public class HomePage02Test extends MaterBaseClass {
 		Assert.assertEquals(alertMessage, "Successfully Registered!!!");
 	}
 
-	@Test(groups = "integration")
+	@Test(groups = { "Smoke","negative"})
 	public void userNamePostAccountCreationVerificationTest() {
 		lp.getSignUPButton().click();
 		webDrUtil.waitUntilElementToBeClickable(lp.getSignUPPageText());
