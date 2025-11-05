@@ -62,10 +62,15 @@ public class LoginPage {
 
 	@FindBy(xpath = "//h4[.='Member Registration Form']")
 	private WebElement signUPPageText;
-
 	public WebElement getSignUPPageText() {
 		return signUPPageText;
 	}
+	
+	@FindBy(xpath = "//h4[.='Login Form']/ancestor::div[@class='modal-content']/descendant::button[.='Close']")
+	private WebElement closeBtn;
+	public WebElement getCloseBtn() {
+		return closeBtn;
+		}
 
 	public void login(String username, String password) {
 
