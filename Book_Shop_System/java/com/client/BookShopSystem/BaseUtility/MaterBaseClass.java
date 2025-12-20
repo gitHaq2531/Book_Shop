@@ -32,6 +32,8 @@ public class MaterBaseClass {
 	public BookDetailPage pdp;
 	public AddToCartPage atc;
 	public SignUpPage sp;
+	
+	
 	@BeforeSuite(alwaysRun = true)
 	public void beforeSuitConfigMethod() {
 		System.out.println("suit level configuration start");
