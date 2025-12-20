@@ -1,4 +1,4 @@
-package com.client.BookShopSystem.GenericUtility;
+ package com.client.BookShopSystem.GenericUtility;
 
 import java.time.Duration;
 
@@ -44,7 +44,7 @@ public class WebDriverUtility {
 	
 	//EXPLICIT WAIT
 	
-	public void ExplicitWaitUntilAlertIsPresent() {
+	  public void ExplicitWaitUntilAlertIsPresent() {
 		expWait.until(ExpectedConditions.alertIsPresent());
 		
 	}

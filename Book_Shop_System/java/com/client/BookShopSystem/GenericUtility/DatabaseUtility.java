@@ -1,4 +1,4 @@
-package com.client.BookShopSystem.GenericUtility;
+ package com.client.BookShopSystem.GenericUtility;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
