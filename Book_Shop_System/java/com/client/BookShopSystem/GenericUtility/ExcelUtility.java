@@ -39,7 +39,8 @@ public class ExcelUtility {
 			Sheet sh = wb.getSheet(SheetName);
 			rowcount = sh.getLastRowNum();
 			wb.close();
-			return rowcount;
+			
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();

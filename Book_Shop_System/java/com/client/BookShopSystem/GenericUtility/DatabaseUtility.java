@@ -58,6 +58,7 @@ public class DatabaseUtility {
 
 		return result;
 	}
+	
 
 	public int executeNonSelectQuery(String query) {
 		int result = 0;
