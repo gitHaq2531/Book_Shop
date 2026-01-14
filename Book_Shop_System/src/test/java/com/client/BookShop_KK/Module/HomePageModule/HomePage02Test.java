@@ -7,6 +7,8 @@ import com.client.BookShopSystem.BaseUtility.MaterBaseClass;
 import com.client.BookShopSystem.GenericUtility.JavaUtility;
  
 public class HomePage02Test extends MaterBaseClass {
+
+	
 	JavaUtility ju = new JavaUtility();
 	@Test(groups = { "Smoke","negative"})
 	public void LoginButtonVerificationTest() {

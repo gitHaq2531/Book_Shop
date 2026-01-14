@@ -7,13 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 import com.client.BookShopSystem.GenericUtility.WebDriverUtility;
 
 public class LoginPage {
-	HomePage wp;
+
 	WebDriver driver;
 	WebDriverUtility webDrUtil;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-		wp = new HomePage(driver);
 		webDrUtil = new WebDriverUtility(driver);
 		PageFactory.initElements(driver, this);
 

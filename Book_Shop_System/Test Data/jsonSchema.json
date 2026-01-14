@@ -1,0 +1,37 @@
+{
+	"type": "object",
+	"required": [
+		"msg",
+		"employeeName",
+		"dob",
+		"mobile",
+		"employeeId",
+		"email",
+		"username"
+	],
+	"properties": {
+		"msg": {
+			"type": "string"
+		},
+		"employeeName": {
+			"type": "string"
+		},
+		"dob": {
+			"type": "string"
+		},
+		"mobile": {
+			"type": "string"
+		},
+		"employeeId": {
+			"type": "string"
+		},
+		"email": {
+			"type": "string",
+			"format": "email"
+		},
+		"username": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

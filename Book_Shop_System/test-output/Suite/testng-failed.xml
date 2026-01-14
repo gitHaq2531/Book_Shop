@@ -3,6 +3,19 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
+      <class name="com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest">
+        <methods>
+          <include name="afterMethodConfigMethod"/>
+          <include name="selectBookAndAddToCartAndPlaceOrderTest"/>
+          <include name="selectBookAndAddToCartTest"/>
+          <include name="beforeMethodConfigMethod"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="sortAndSelectBookAndAddToCartAndPlaceOrderTest"/>
+        </methods>
+      </class> <!-- com.client.BookShop_KK.Module.ChildrenAndTeens.ChildrenAndTeensTest -->
       <class name="com.client.BookShop_KK.Module.RegionalBooks.RegionalBooksTest">
         <methods>
           <include name="afterMethodConfigMethod"/>

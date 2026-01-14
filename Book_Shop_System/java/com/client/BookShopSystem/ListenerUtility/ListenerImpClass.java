@@ -71,7 +71,7 @@ public class ListenerImpClass implements ITestListener, ISuiteListener {
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestSkipped(result);
-		UtilityClassObject.getTest().log(Status.FAIL, "Test execution Failed ");
+		UtilityClassObject.getTest().log(Status.SKIP, "Test execution Skipped ");
 
 	}
 

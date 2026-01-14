@@ -1,6 +1,8 @@
 package src.test.java.com.client.BookShop_KK.Module.HealthAndCooking;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -68,30 +70,41 @@ public class HealthAndCooking extends BaseClass {
 		atc.clearCart();
 
 	}
-	
+
 	@Test(groups = "system")
 	public void selectBookAndAddToCartAndPlaceOrderTest() {
-		 String value = exlutil.getDataFromExcelSheet("Kaif Khan", 7, 0);
-			hp.getSideBarText(value).click();
-			plp.getFirstBook().click();
-			WebElement addToCartBtn = pdp.getAddToCartBtn();
-			int priceAfterDiscountPDP = pdp.getPriceAfterDiscount(addToCartBtn);
-			String bookNamePDP = pdp.getbookName().getText();
-			WebElement quantityDropDown = pdp.getQuantityDropDown();
-			int count = webDrUtil.getOptionCount(quantityDropDown);
-			String number = String.valueOf(ju.getRandomeNumber(1, count));
-			webDrUtil.selectByValue(quantityDropDown, number);
-			pdp.getAddToCartBtn().click();
-			String[] productDetailATC = atc.getProductDetailATC(atc.getOrderDetail());
-			softAssert.assertEquals(productDetailATC[0].trim(), bookNamePDP.trim());
-			softAssert.assertEquals(productDetailATC[1], number);
-			softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
-			softAssert.assertAll();
-			atc.clickOnPlaceOrder();
-			webDrUtil.ExplicitWaitUntilAlertIsPresent();
-			webDrUtil.switcToAlertAccept();
-			atc.getMoreShoppingbtn().click();
-			Assert.assertTrue(hp.getBookBirdLogo().isDisplayed());
+		String value = exlutil.getDataFromExcelSheet("Kaif Khan", 7, 0);
+		hp.getSideBarText(value).click();
+		plp.getFirstBook().click();
+		WebElement addToCartBtn = pdp.getAddToCartBtn();
+		int priceAfterDiscountPDP = pdp.getPriceAfterDiscount(addToCartBtn);
+		String bookNamePDP = pdp.getbookName().getText();
+		WebElement quantityDropDown = pdp.getQuantityDropDown();
+		int count = webDrUtil.getOptionCount(quantityDropDown);
+		String number = String.valueOf(ju.getRandomeNumber(1, count));
+		webDrUtil.selectByValue(quantityDropDown, number);
+		pdp.getAddToCartBtn().click();
+		String[] productDetailATC = atc.getProductDetailATC(atc.getOrderDetail());
+		softAssert.assertEquals(productDetailATC[0].trim(), bookNamePDP.trim());
+		softAssert.assertEquals(productDetailATC[1], number);
+		softAssert.assertTrue(Integer.parseInt(productDetailATC[2]) == priceAfterDiscountPDP);
+		softAssert.assertAll();
+		atc.clickOnPlaceOrder();
+		webDrUtil.ExplicitWaitUntilAlertIsPresent();
+		webDrUtil.switcToAlertAccept();
+		atc.getMoreShoppingbtn().click();
+		Assert.assertTrue(hp.getBookBirdLogo().isDisplayed());
 	}
 
+	@Test
+	public void method() {
+		
+             hp.getchildAndTeenLink().click();
+             WebElement edt = plp.getSortDropDown();
+			Select sel = new Select(edt);
+			WebElement wrappedElement = sel.getWrappedElement();
+			System.out.println(wrappedElement);
+			System.out.println(edt== wrappedElement);
+			
+	}
 }
